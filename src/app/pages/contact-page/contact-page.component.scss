@@ -6,11 +6,11 @@ section {
   justify-content: center;
   align-items: center;
   height: main.$page-height;
-  background-color: rgba(64, 187, 118, 0.4);
+  background-color: main.$green-background-color;
 
 
   .phone-pic {
-    //box-sizing: border-box;
+    box-sizing: border-box;
     padding: 0 0 25px 0;
     width: 100%;
     background-image: url("~src/assets/phone-breit.webp");

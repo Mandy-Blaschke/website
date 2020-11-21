@@ -6,8 +6,15 @@
 
 body {
   margin: 0;
-  font-family: 'Rajdhani', sans-serif;
   background-color: main.$color-white;
+}
+
+body, h1, h2, p, button, a {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+h1 {
+  margin: 0.5em 0;
 }
 
 p {

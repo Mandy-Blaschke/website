@@ -11,6 +11,7 @@ import { QualificationPageComponent } from './pages/qualification-page/qualifica
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 import { ButtonComponent } from './common/button/button.component';
 import { WelcomePageComponent } from './pages/welcome-page/welcome-page.component';
+import { MainPageButtonComponent } from './common/main-page-button/main-page-button.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { WelcomePageComponent } from './pages/welcome-page/welcome-page.componen
     ContactPageComponent,
     ButtonComponent,
     WelcomePageComponent,
+    MainPageButtonComponent,
   ],
   imports: [
     BrowserModule,
