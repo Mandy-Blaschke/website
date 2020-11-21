@@ -1,8 +1,17 @@
 $content-padding: 0 35px;
-$page-height: 100vh;
-$color-white: ghostwhite;
+$page-height: 99vh;
+$color-white: #f8f8ff;
 $color-grey1: #e5e4e4;
 $color-grey2: #a0a0a0;
+$main-page-font-size: 30px;
+$main-page-header-font-size: 65px;
+
+@mixin section-standards{
+  min-height: $page-height;
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 25px;
+}
 
 @mixin footer {
   background-image: $footer-bg-img;

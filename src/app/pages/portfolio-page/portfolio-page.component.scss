@@ -1,7 +1,36 @@
 @use "src/app/main";
 
-main {
-  height: main.$page-height;
-  // TODO REMOVE
-  border: 5px solid red;
+section {
+  @include main.section-standards;
+  align-items: center;
+
+  // TODO Testing
+  background-color: rgba(64, 187, 118, 0.4);
+  color: main.$color-white;
+  text-shadow: 1px 1px 5px main.$color-grey2;
+
+  .text {
+    box-sizing: border-box;
+    padding: 10%;
+    width: 50%;
+
+    h1 {
+      font-size: main.$main-page-header-font-size;
+    }
+
+    p {
+      font-size: main.$main-page-font-size;
+    }
+  }
+
+  .pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    img {
+      max-width: 600px;
+    }
+  }
 }

@@ -1,0 +1,28 @@
+@use "~src/app/main";
+
+section {
+  @include main.section-standards;
+  justify-content: center;
+  align-items: center;
+
+  .pic {
+    width: 50%;
+
+    img {
+      max-width: 600px;
+      filter: grayscale(50%);
+    }
+  }
+
+  .text {
+    width: 50%;
+
+    h1 {
+      font-size: main.$main-page-header-font-size;
+    }
+
+    p {
+      font-size: main.$main-page-font-size;
+    }
+  }
+}

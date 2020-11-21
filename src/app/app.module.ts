@@ -22,7 +22,7 @@ import { WelcomePageComponent } from './pages/welcome-page/welcome-page.componen
     QualificationPageComponent,
     ContactPageComponent,
     ButtonComponent,
-    WelcomePageComponent
+    WelcomePageComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,36 @@
+@use "~src/app/main";
+
+section {
+  @include main.section-standards;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: main.$page-height;
+  background-color: rgba(64, 187, 118, 0.4);
+
+
+  .phone-pic {
+    //box-sizing: border-box;
+    padding: 0 0 25px 0;
+    width: 100%;
+    background-image: url("~src/assets/phone-breit.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    p, h1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: main.$main-page-header-font-size;
+    }
+
+    p {
+      font-size: main.$main-page-font-size;
+    }
+  }
+}
