@@ -1,7 +1,41 @@
 @use "src/app/main";
 
 main {
-  width: 100%;
   min-height: main.$page-height;
   padding: main.$content-padding;
+  display: flex;
+  justify-content: center;
+  margin-top: -150px;
+  align-items: center;
+
+  .card {
+    margin-top: 100px;
+    width: 800px;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    background-color: ghostwhite;
+    box-shadow: 0 -3px 7px main.$color-grey2;
+
+    .image {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+
+      img {
+        width: 250px;
+        filter: drop-shadow(2px 2px 15px gray);
+      }
+    }
+
+    .text {
+      box-sizing: border-box;
+      padding: 15px;
+      text-align: justify;
+
+      h1 {
+        text-indent: 30%;
+      }
+    }
+  }
 }

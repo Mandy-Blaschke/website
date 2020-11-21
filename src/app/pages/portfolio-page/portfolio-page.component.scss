@@ -1,0 +1,7 @@
+@use "src/app/main";
+
+main {
+  height: main.$page-height;
+  // TODO REMOVE
+  border: 5px solid red;
+}
