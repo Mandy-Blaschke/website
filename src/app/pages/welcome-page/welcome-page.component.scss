@@ -1,0 +1,7 @@
+@use "src/app/main";
+
+main {
+  width: 100%;
+  min-height: main.$page-height;
+  padding: main.$content-padding;
+}

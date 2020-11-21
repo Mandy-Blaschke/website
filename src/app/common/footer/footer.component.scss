@@ -1,0 +1,7 @@
+@use "src/app/main";
+
+div {
+  height: 150px;
+  width: 100%;
+  @include main.footer;
+}

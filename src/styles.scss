@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@use "app/main";
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: main.$color-grey1;
+}
+
+p {
+  font-weight: 500;
+}
