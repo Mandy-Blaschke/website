@@ -11,8 +11,8 @@ section {
 
   .text {
     box-sizing: border-box;
-    padding: 10%;
-    width: 50%;
+    padding-left: 35px;
+    width: 35%;
 
     h1 {
       font-size: main.$main-page-header-font-size;
@@ -27,7 +27,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 65%;
 
     img {
       max-width: 600px;
