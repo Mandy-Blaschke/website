@@ -1,0 +1,6 @@
+@use "src/app/main";
+
+section {
+  height: main.$page-height;
+  padding: main.$content-padding;
+}

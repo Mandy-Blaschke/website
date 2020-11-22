@@ -10,7 +10,7 @@ button {
   background-color: main.$color-pink;
   color: main.$color-white;
 
-  &:hover {
+  &:hover, &:active {
     color: main.$color-pink;
     background-color: main.$color-white;
   }
