@@ -13,6 +13,8 @@ import { ButtonComponent } from './common/button/button.component';
 import { WelcomePageComponent } from './pages/welcome-page/welcome-page.component';
 import { MainPageButtonComponent } from './common/main-page-button/main-page-button.component';
 import { PortfolioSubpageComponent } from './pages/portfolio-page/portfolio-subpage/portfolio-subpage.component';
+import { PinnedCardComponent } from './pages/portfolio-page/portfolio-subpage/pinned-card/pinned-card.component';
+import { ArchivedCardComponent } from './pages/portfolio-page/portfolio-subpage/archived-card/archived-card.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { PortfolioSubpageComponent } from './pages/portfolio-page/portfolio-subp
     WelcomePageComponent,
     MainPageButtonComponent,
     PortfolioSubpageComponent,
+    PinnedCardComponent,
+    ArchivedCardComponent,
   ],
   imports: [
     BrowserModule,

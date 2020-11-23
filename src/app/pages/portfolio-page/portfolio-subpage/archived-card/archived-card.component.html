@@ -1,0 +1,26 @@
+<div class="card-box">
+
+  <div class="card" *ngFor="let archived of archivedCard">
+
+    <div class="preview" [style.backgroundImage]="'url(' + archived.preview + ')'">
+    </div>
+
+    <div class="text">
+      <h2>{{archived.title}}</h2>
+      <p class="description">{{archived.description}}</p>
+      <p class="tags">{{archived.tags}}</p>
+    </div>
+
+    <div class="links">
+      <a href="{{archived.url}}" target="_blank">
+        <app-button>Projekt ansehen</app-button>
+      </a>
+
+      <a href="{{archived.gitUrl}}" target="_blank">
+        <app-button>Github Repository</app-button>
+      </a>
+    </div>
+
+  </div>
+
+</div>

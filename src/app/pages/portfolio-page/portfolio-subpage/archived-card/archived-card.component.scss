@@ -1,0 +1,45 @@
+@use "src/app/main";
+
+.card-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 150px;
+
+  .card {
+    box-sizing: border-box;
+    width: 350px;
+    height: fit-content;
+    margin: 35px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px main.$color-grey2;
+
+    .preview {
+      background-size: cover;
+      background-position: center;
+      height: 150px;
+      background-color: #40BB76;
+    }
+
+    .text {
+      padding: 15px 25px;
+
+      .description {
+        min-height: 160px;
+      }
+
+      .tags {
+        font-size: 0.8rem;
+        font-style: italic;
+      }
+    }
+
+    .links {
+      justify-self: end;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 25px;
+    }
+  }
+}

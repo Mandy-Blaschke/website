@@ -1,0 +1,27 @@
+<div class="card" *ngFor="let pinned of pinnedCards">
+
+  <div class="card-left">
+
+    <div class="text">
+      <h2>{{pinned.title}}</h2>
+      <p class="description">{{pinned.description}}</p>
+      <p class="tags">{{pinned.tags}}</p>
+    </div>
+
+    <div class="links">
+      <a href="{{pinned.url}}" target="_blank">
+        <app-button>Projekt ansehen</app-button>
+      </a>
+
+      <a href="{{pinned.gitUrl}}" target="_blank">
+        <app-button>Github Repository</app-button>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="card-right" [style.backgroundImage]="'url('+ pinned.preview + ')'">
+    <div class="star">🟊</div>
+  </div>
+
+</div>

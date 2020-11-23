@@ -1,0 +1,75 @@
+@use "src/app/main";
+
+.card {
+  display: flex;
+  margin: 50px 0;
+  box-shadow: 0 0 15px main.$color-grey2;
+
+  .card-left {
+    width: 50%;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      padding: 15px 25px;
+      text-align: justify;
+
+      h2 {
+        color: main.$color-green1;
+      }
+
+      .description {
+        min-height: 125px;
+      }
+
+      .tags {
+        font-size: 0.8rem;
+        font-style: italic;
+      }
+    }
+
+    .links {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 25px;
+    }
+  }
+
+  .card-right {
+    width: 50%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+
+    .star {
+      position: absolute;
+      top: -58px;
+      right: -32px;
+      color: yellow;
+      font-size: 6rem;
+      z-index: 3;
+      text-shadow: 0 0 12px main.$color-grey2;
+      animation: rotate infinite 5s;
+    }
+  }
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
