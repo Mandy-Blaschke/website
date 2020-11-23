@@ -13,5 +13,7 @@ button {
   &:hover, &:active {
     color: main.$color-pink;
     background-color: main.$color-white;
+    cursor: pointer;
+    box-shadow: 0 0 5px main.$color-grey2;
   }
 }

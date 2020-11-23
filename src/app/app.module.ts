@@ -15,6 +15,7 @@ import { MainPageButtonComponent } from './common/main-page-button/main-page-but
 import { PortfolioSubpageComponent } from './pages/portfolio-page/portfolio-subpage/portfolio-subpage.component';
 import { PinnedCardComponent } from './pages/portfolio-page/portfolio-subpage/pinned-card/pinned-card.component';
 import { ArchivedCardComponent } from './pages/portfolio-page/portfolio-subpage/archived-card/archived-card.component';
+import { QualificationSubpageComponent } from './pages/qualification-page/qualification-subpage/qualification-subpage.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ArchivedCardComponent } from './pages/portfolio-page/portfolio-subpage/
     PortfolioSubpageComponent,
     PinnedCardComponent,
     ArchivedCardComponent,
+    QualificationSubpageComponent,
   ],
   imports: [
     BrowserModule,

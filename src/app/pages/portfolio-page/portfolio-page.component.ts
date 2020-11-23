@@ -12,8 +12,4 @@ export class PortfolioPageComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  gotToSubpage(): void {
-    this.router.navigate(['portfolio']);
-  }
 }

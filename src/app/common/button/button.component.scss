@@ -1,0 +1,17 @@
+@use "src/app/main";
+
+button {
+  outline: none;
+  border: none;
+  padding: 10px 25px;
+  font-weight: 700;
+  background-color: main.$color-pink;
+  color: main.$color-white;
+
+  &:hover, &:active {
+    color: main.$color-pink;
+    background-color: main.$color-white;
+    cursor: pointer;
+    box-shadow: 0 0 5px main.$color-grey2;
+  }
+}
