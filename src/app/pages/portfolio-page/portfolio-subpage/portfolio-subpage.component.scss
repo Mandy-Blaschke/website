@@ -1,6 +1,189 @@
 @use "src/app/main";
 
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+
+app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 30;
+}
+
 section {
-  height: main.$page-height;
+  margin: 150px 0;
+  min-height: main.$page-height;
   padding: main.$content-padding;
+  @include main.section-standards;
+  flex-direction: column;
+  align-items: center;
+
+
+  .quote-box {
+    box-sizing: border-box;
+    max-width: 850px;
+    min-width: 320px;
+    margin: 150px 0;
+    border-left: 20px solid lighten(main.$green-background-color, 30%);
+
+    .quote {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 10px 10px 10px 30px;
+      position: relative;
+      text-align: justify;
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.5em;
+
+      cite {
+        font-size: 0.6em;
+        font-weight: 500;
+        color: main.$color-grey2;
+
+        &:before {
+          content: '\2015';
+        }
+      }
+
+      &:after {
+        font-family: 'Della Respira', serif;
+        content: '\201D';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 27rem;
+        color: lighten(main.$green-background-color, 30%);
+        z-index: -1;
+      }
+    }
+  }
+
+  .card-box {
+    display: flex;
+    justify-content: center;
+
+    .card {
+      display: flex;
+
+      .links {
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-end;
+        padding: 0 15px 20px 15px;
+
+        a {
+          outline: none;
+        }
+
+      }
+    }
+  }
+
+  .pinned-card-box {
+    flex-direction: column;
+    align-items: center;
+
+    .pinned-card {
+      max-width: 850px;
+      min-width: 320px;
+      margin: 50px 0;
+      font-size: 1.3rem;
+      box-shadow: 0 -5px 15px main.$color-grey1;
+
+      .pinned-card-left-site {
+        padding: 15px 25px 25px 25px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+
+        h2 {
+          color: main.$color-green1;
+        }
+
+        .tags {
+          font-size: 0.9rem;
+        }
+      }
+
+      .pinned-card-right-site {
+        position: relative;
+        width: 50%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .star {
+          position: absolute;
+          top: -58px;
+          right: -32px;
+          color: yellow;
+          font-size: 8rem;
+          z-index: 3;
+          text-shadow: 0 0 12px main.$color-grey2;
+          animation: rotate infinite 5s;
+        }
+      }
+    }
+  }
+
+  .archived-card-box {
+    flex-wrap: wrap;
+
+    .archived-card {
+      flex-direction: column;
+      box-sizing: border-box;
+      margin: 50px 35px;
+      min-width: 200px;
+      max-width: 320px;
+      box-shadow: 0 -5px 15px main.$color-grey1;
+      font-size: 20px;
+      word-wrap: normal;
+      text-align: justify;
+
+      .preview {
+        background-color: #40BB76;
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .text {
+        padding: 0 15px 20px 15px;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+          font-size: 25px;
+        }
+
+        .tags {
+          font-size: 0.85rem;
+          justify-self: flex-end;
+        }
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

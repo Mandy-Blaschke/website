@@ -2,7 +2,54 @@
 
 <section>
 
-  <div class="pinned-card">
+  <div class="quote-box">
+    <blockquote class="quote">
+      Das Glück besteht nicht darin, dass du tun kannst, was du willst,<br>
+      sondern darin, dass du immer willst, was du tust.<br>
+      <cite>&nbsp; Leo Tolstoi</cite>
+    </blockquote>
+  </div>
+
+
+  <div class="pinned-card-box card-box">
+
+    <div class="pinned-card card" *ngFor="let pinned of pinnedProjects">
+
+      <div class="pinned-card-left-site">
+        <h2>{{pinned.title}}</h2>
+        <p>{{pinned.description}}</p>
+        <p class="tags">{{pinned.tags}}</p>
+        <div class="links">
+          <a href="{{pinned.url}}">Projekt ansehen</a>
+          <a href="{{pinned.gitUrl}}">Github Repository</a>
+        </div>
+      </div>
+
+      <div class="pinned-card-right-site" [style.backgroundImage]="'url('+ pinned.preview + ')'">
+        <div class="star">🟊</div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="archived-card-box  card-box">
+
+    <div class="archived-card card" *ngFor="let archived of archivedProjects">
+
+      <div class="preview" [style.backgroundImage]="'url(' + archived.preview + ')'"></div>
+      <div class="text">
+        <h2>{{archived.title}}</h2>
+        <p>{{archived.description}}</p>
+        <p class="tags">{{archived.tags}}</p>
+      </div>
+
+      <div class="links">
+        <a href="{{archived.url}}">Projekt ansehen</a>
+        <a href="{{archived.gitUrl}}">Github Repository</a>
+      </div>
+
+    </div>
 
   </div>
 

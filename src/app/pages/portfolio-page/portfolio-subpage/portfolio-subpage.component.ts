@@ -66,12 +66,12 @@ export class PortfolioSubpageComponent implements OnInit {
     },
     {
       title: 'TicTacToe',
-      description: 'Das ist ein Drei-Gewinnt-Spiel, bei dem zwei Leute gegeneinander antreten ' +
-        'können, wobei die Münze entscheidet, wer beginnt.',
-      preview: '',
+      description: 'Das ist ein Drei-Gewinnt-Spiel, bei dem zwei Leute gegeneinander spielen können. ' +
+        'Das ist meine neue Version von dem Spiel, dass ich dieses Mal mit dem Framework Angular erstellt habe.',
+      preview: '/assets/previews/tictactoe-preview.webp',
       url: '',
       gitUrl: 'https://github.com/Mandy-Blaschke/tic-tac-toe-game',
-      tags: ['HTML', 'CSS', 'JavaScript'],
+      tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
       pinned: true,
     },
     {
@@ -107,7 +107,7 @@ export class PortfolioSubpageComponent implements OnInit {
     },
     {
       title: 'Whack-a-Mole-Spiel',
-      preview: '',
+      preview: '/assets/previews/whack-a-mole-preview.webp',
       url: '',
       description: 'Ein Spiel, bei dem um Schnelligkeit geht. Ziel ist es möglichst viele Punkte zu erzielen. ' +
         'Diese bekommt man, indem man einem Maulwurf, der zufällig auf dem Spielfeld erscheint zurück in die ' +
@@ -121,7 +121,7 @@ export class PortfolioSubpageComponent implements OnInit {
       title: 'Memory',
       description: 'Das klassische Memory Spiel, bei dem das Ziel darin besteht, alle Kartenpaare zu finden.' +
         ' Es ist alleine, zu zweit, sowie gegen den Computer spielbar. Der Computer hat aktuell drei Schwierigkeitsstufen.',
-      preview: '',
+      preview: '/assets/previews/memory-preview.webp',
       url: '',
       gitUrl: 'https://github.com/Mandy-Blaschke/memory-game',
       tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
@@ -193,7 +193,8 @@ export class PortfolioSubpageComponent implements OnInit {
     },
     {
       title: 'TicTacToc - Version 1',
-      description: 'TicTacToe-Spiel, dass ich ohne Framework erstellt habe. Diente dazu, die Grundlagen von JavaScript zu lernen.',
+      description: 'TicTacToe-Spiel, dass ich ohne Framework erstellt habe. Diente dazu, die Grundlagen von JavaScript zu lernen. ' +
+        'Zwei Spieler können gegen einander spielen, wobei die Münze entscheidet, wer beginnt.',
       preview: '',
       url: '',
       gitUrl: 'https://github.com/Mandy-Blaschke/tic-tac-toe-game',
