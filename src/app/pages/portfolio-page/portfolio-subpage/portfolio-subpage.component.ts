@@ -22,37 +22,27 @@ export class PortfolioSubpageComponent implements OnInit {
 
 export const projects: Project[] = [
   {
-
-    // TODO Change description
     title: 'Homepage',
-    description: 'Das ist meine alte Homepage. Auf dieser finden Sie Informationen zu meiner Person, ' +
-      'meiner Qualifikation und Antworten auf Fragen, die Sie vielleicht interessieren.',
-    preview: '',
+    description: 'Das ist meine alte Homepage.',
+    preview: '/assets/previews/webseite.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/homepage',
     tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
     pinned: false,
   },
   {
-
-    // TODO Change description
     title: 'Portfolio',
-    description: 'Hier handelt es sich um die Seite, die sie gerade sehen. Da ich ständig neue Projekte erstelle, ' +
-      'mit wechselnden Anforderungen und Anwendungsfällen, wird diese Seite den Status "fertig" ' +
-      'wahrscheinlich nie erreichen.',
-    preview: '',
+    description: 'Hier handelt es sich um mein vorheriges Portfolio.',
+    preview: '/assets/previews/portfolio.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/portfolio',
     tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
     pinned: false,
   },
   {
-
-    // TODO Change description
     title: 'Projekt Archiv',
-    description: 'Dies ist mein altes Projekt Archiv, in dem Sie alle Projekte finden werden, die ich fertig gestellt habe. ' +
-      'Dies ermöglicht Ihnen einen umfassenderen Eindruck meiner Entwicklung.',
-    preview: '',
+    description: 'Dies ist mein altes Projekt Archiv.',
+    preview: '/assets/previews/archiv.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/archiv',
     tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
@@ -61,7 +51,7 @@ export const projects: Project[] = [
   {
     title: 'Schach',
     description: 'Schachbrett, sodass zwei Spieler gegeneinander spielen können.',
-    preview: '',
+    preview: '/assets/previews/schach.webp',
     url: '',
     gitUrl: '',
     tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
@@ -71,7 +61,7 @@ export const projects: Project[] = [
     title: 'Hangman',
     description: 'Das ein Spiel, bei dem ein Wort gesucht ist. Man rät Buchstaben, um das Wort zu finden, ' +
       'möglichst bevor der "Hangman" fertig gezeichnet wurde.',
-    preview: '',
+    preview: '/assets/previews/hangman2.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/hangman-game',
     tags: ['HTML', 'CSS', 'JavaScript'],
@@ -82,7 +72,7 @@ export const projects: Project[] = [
     description: 'Das ist ein Drei-Gewinnt-Spiel, bei dem zwei Leute gegeneinander spielen können. ' +
       'Das ist meine neue Version von dem Spiel, dass ich dieses Mal mit dem Framework Angular erstellt habe.',
     preview: '/assets/previews/tictactoe-preview.webp',
-    url: '',
+    url: '/assets/previews/tictactoe2.webp',
     gitUrl: 'https://github.com/Mandy-Blaschke/tic-tac-toe-game',
     tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
     pinned: true,
@@ -90,7 +80,7 @@ export const projects: Project[] = [
   {
     title: '17und4',
     description: 'Siebzehn-und-vier ist ein Kartenspiel. Es funktioniert fast genauso wie das bekannte Casino-Spiel \'Black Jack\'.',
-    preview: '',
+    preview: '/assets/previews/17und4.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/siebzehn-und-vier',
     tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
@@ -101,7 +91,7 @@ export const projects: Project[] = [
     description: 'Eine einfache Pomodoro- oder auch Tomato-Clock, bei der man das Intervall festlegen kann und ein Alarm ertönt, wenn ' +
       'die Zeit abgelaufen ist. Bei diesem Projekt hatte ich Hilfe von meinem Mann, bei der Berechnung der Zeiten und deren Aktualisierung, ' +
       'da dies mein erstes Projekt war, bei dem ich Zeitstempel genutzt habe.',
-    preview: '',
+    preview: '/assets/previews/pomodoro.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/pomodoro-clock',
     tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
@@ -112,7 +102,7 @@ export const projects: Project[] = [
     description: 'Das Spiel hat vier Felder mit unterschiedlichen ' +
       'Farben, der jeweils ein Ton zugeordnet ist. Senso beginnt damit in der ersten Runde einen (in der zweiten zwei usw.) Ton ' +
       'vorzugeben, den der Spieler sich merken und nachspielen muss. Mit wachsender Anzahl werden die Vorgaben schneller.',
-    preview: '',
+    preview: '/assets/previews/senso.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/senso-game',
     tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
@@ -120,7 +110,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Whack-a-Mole-Spiel',
-    preview: '/assets/previews/whack-a-mole-preview.webp',
+    preview: '/assets/previews/mole.webp',
     url: '',
     description: 'Ein Spiel, bei dem um Schnelligkeit geht. Ziel ist es möglichst viele Punkte zu erzielen. ' +
       'Diese bekommt man, indem man einem Maulwurf, der zufällig auf dem Spielfeld erscheint zurück in die ' +
@@ -134,7 +124,7 @@ export const projects: Project[] = [
     title: 'Memory',
     description: 'Das klassische Memory Spiel, bei dem das Ziel darin besteht, alle Kartenpaare zu finden.' +
       ' Es ist alleine, zu zweit, sowie gegen den Computer spielbar. Der Computer hat aktuell drei Schwierigkeitsstufen.',
-    preview: '/assets/previews/memory-preview.webp',
+    preview: '/assets/previews/memory.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/memory-game',
     tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
@@ -144,7 +134,7 @@ export const projects: Project[] = [
     title: 'Vergieß Mein Nicht',
     description: 'Das eine App, die ich geschrieben habe, um den Überblick darüber behalten zu können, ' +
       'wann welche Pflanze gegossen werden muss.',
-    preview: '',
+    preview: '/assets/previews/giess-app.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/vergiess-mein-nicht',
     tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
@@ -153,7 +143,7 @@ export const projects: Project[] = [
   {
     title: 'Kalorientracker',
     description: 'Kalorien-App, die den Locale Storage nutzt.',
-    preview: '',
+    preview: '/assets/previews/kalorien.webp',
     gitUrl: 'https://github.com/Mandy-Blaschke/energiebedarf',
     url: '/assets/kal-v1/',
     tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
@@ -162,7 +152,7 @@ export const projects: Project[] = [
   {
     title: 'Rechne Mal',
     description: 'App, um die Malfolgen zu lernen, die ich für meine Nichte erstellt habe.',
-    preview: '',
+    preview: '/assets/previews/rechnen.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/malfolgen',
     tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
@@ -171,7 +161,7 @@ export const projects: Project[] = [
   {
     title: 'ToDo-Liste',
     description: 'Einfache ToDo-Liste.',
-    preview: '',
+    preview: '/assets/previews/todo.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/todo-list',
     tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
@@ -180,7 +170,7 @@ export const projects: Project[] = [
   {
     title: 'Adressbuch',
     description: 'Diese Anwendung diente ausschließlich dem Lern-Effekt und ist nicht responsive.',
-    preview: '',
+    preview: '/assets/previews/adressbuch.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/adressbuch',
     tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
@@ -189,7 +179,7 @@ export const projects: Project[] = [
   {
     title: 'Kundenverwaltung',
     description: 'Diese Anwendung diente ausschließlich dem Lern-Effekt und ist nicht responsive.',
-    preview: '',
+    preview: '/assets/previews/kunden.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/kundenverwaltung',
     tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
@@ -198,7 +188,7 @@ export const projects: Project[] = [
   {
     title: 'Hangman - Version 1',
     description: 'Hangman-Spiel, dass ich ohne Framework erstellt habe. Diente dazu, die Grundlagen von JavaScript zu lernen.',
-    preview: '',
+    preview: '/assets/previews/hangman1.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/hangman-game',
     tags: ['HTML', 'CSS', 'JavaScript'],
@@ -208,7 +198,7 @@ export const projects: Project[] = [
     title: 'TicTacToc - Version 1',
     description: 'TicTacToe-Spiel, dass ich ohne Framework erstellt habe. Diente dazu, die Grundlagen von JavaScript zu lernen. ' +
       'Zwei Spieler können gegen einander spielen, wobei die Münze entscheidet, wer beginnt.',
-    preview: '',
+    preview: '/assets/previews/tictactoe1.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/tic-tac-toe-game',
     tags: ['HTML', 'CSS', 'JavaScript'],
@@ -217,7 +207,7 @@ export const projects: Project[] = [
   {
     title: 'SchereSteinPapier',
     description: 'Spiel, dass ich ohne Framework erstellt habe. Diente dazu, die Grundlagen von JavaScript zu lernen.',
-    preview: '',
+    preview: '/assets/previews/schere-stein-papier.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/scissors-stone-paper-game',
     tags: ['HTML', 'CSS', 'JavaScript'],
@@ -226,7 +216,7 @@ export const projects: Project[] = [
   {
     title: 'Zahlen-Raten',
     description: 'Spiel, dass ich ohne Framework erstellt habe. Diente dazu, die Grundlagen von JavaScript zu lernen.',
-    preview: '',
+    preview: '/assets/previews/zahlen-raten.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/zahlen-raten-spiel',
     tags: ['HTML', 'CSS', 'JavaScript'],
@@ -235,7 +225,7 @@ export const projects: Project[] = [
   {
     title: 'Portfolio Page',
     description: 'Projekt aus meinen Kursen bei FreeCodeCamp.',
-    preview: '',
+    preview: '/assets/previews/portfolio1.webp',
     url: 'https://codepen.io/M-Andy89/pen/GRprbMQ',
     gitUrl: 'https://github.com/Mandy-Blaschke/freecodecamp-projects',
     tags: ['FreeCodeCamp', 'Kurs-Projekt', 'HTML', 'CSS'],
@@ -244,7 +234,7 @@ export const projects: Project[] = [
   {
     title: 'Documentation Page',
     description: 'Projekt aus meinen Kursen bei FreeCodeCamp.',
-    preview: '',
+    preview: '/assets/previews/documentation.webp',
     url: 'https://codepen.io/M-Andy89/pen/yLYgOWZ',
     gitUrl: 'https://github.com/Mandy-Blaschke/freecodecamp-projects',
     tags: ['FreeCodeCamp', 'Kurs-Projekt', 'HTML', 'CSS'],
@@ -253,7 +243,7 @@ export const projects: Project[] = [
   {
     title: 'Survey Form',
     description: 'Projekt aus meinen Kursen bei FreeCodeCamp.',
-    preview: '',
+    preview: '/assets/previews/survey.webp',
     url: 'https://codepen.io/M-Andy89/pen/GRpZBqb',
     gitUrl: 'https://github.com/Mandy-Blaschke/freecodecamp-projects',
     tags: ['FreeCodeCamp', 'Kurs-Projekt', 'HTML', 'CSS'],
@@ -262,7 +252,7 @@ export const projects: Project[] = [
   {
     title: 'Landing Page',
     description: 'Projekt aus meinen Kursen bei FreeCodeCamp.',
-    preview: '',
+    preview: '/assets/previews/landing.webp',
     url: 'https://codepen.io/M-Andy89/pen/LYpNKPd',
     gitUrl: 'https://github.com/Mandy-Blaschke/freecodecamp-projects',
     tags: ['FreeCodeCamp', 'Kurs-Projekt', 'HTML', 'CSS'],
@@ -271,7 +261,7 @@ export const projects: Project[] = [
   {
     title: 'Tribute Page',
     description: 'Projekt aus meinen Kursen bei FreeCodeCamp.',
-    preview: '',
+    preview: '/assets/previews/tribute.webp',
     url: 'https://codepen.io/M-Andy89/pen/pojyJGb',
     gitUrl: 'https://github.com/Mandy-Blaschke/freecodecamp-projects',
     tags: ['FreeCodeCamp', 'Kurs-Projekt', 'HTML', 'CSS'],
@@ -280,7 +270,7 @@ export const projects: Project[] = [
   {
     title: 'Blog Page',
     description: 'Projekt aus meinem Udacity Kurs.',
-    preview: '',
+    preview: '/assets/previews/blog.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/blog-page',
     tags: ['Udacity', 'Kurs-Projekt', 'HTML', 'CSS'],

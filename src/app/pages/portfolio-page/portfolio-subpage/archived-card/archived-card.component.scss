@@ -16,10 +16,11 @@
     box-shadow: 0 0 15px main.$color-grey2;
 
     .preview {
-      background-size: cover;
+      background-size: contain;
       background-position: center;
+      background-repeat: no-repeat;
       height: 150px;
-      background-color: #40BB76;
+      background-color: #AADBC2;
     }
 
     .text {

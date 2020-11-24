@@ -27,9 +27,10 @@ export const stations: CareerStation[] = [
     position: 'Studierende',
     specialization: 'Front End Web',
     date: '06/2020 - heute',
-    description: `Seit Juni lerne ich das Framework Angular mit Hilfe von Büchern und meinem Mann.
-                  Demnächst werde ich weitere Kurse bei der Udemy Inc. absolvieren, um ein umfassendenderes
-                  Wissen zu erlangen und besser sowie schneller im Umgang mit dem Framework zu werden. `,
+    description: `Seit Juni lerne ich das Framework Angular mit Hilfe von Büchern, Online-Kursen und meinem Mann.
+                  Seit dieser zeit erstelle ich auch all meine Projekte mit dem Framework.
+                  Um meine Fähigkeiten weiter auszubauen, werde ich mich die nächste Zeit darauf konzentrieren,
+                  Projekte zu erstellen, da ich der Meinung bin, dass man nicht besser Programmieren lernen kann, als durch Praxis.`,
     shown: false,
   },
   {
@@ -37,53 +38,70 @@ export const stations: CareerStation[] = [
     position: 'Studierende',
     specialization: 'Angular (2+)',
     date: '11/2020 - 11/2020',
-    description: 'In diesem Kurs habe ich noch einmal die Grundlagen und weiterführende Inhalte von Angular(2+) gelernt.',
+    description: `Da ich mich für das Framework Angular entschieden hatte, hielt ich es für eine gute Ergänzung, noch einmal einen
+                  kompletten Kurs für die Grundlagen und weiterführende Inhalte von Angular(2+) zu absolvieren.`,
     shown: false,
     certificate: 'Zertifikat',
-    certificateUrl: '',
+    certificateUrl: '/assets/certificates/UdemyAngular(2+)VerstehenUndAnwenden.pdf',
   },
   {
     company: 'Udemy Inc.',
     position: 'Studierende',
     specialization: 'CSS & SCSS',
     date: '05/2020 - 05/2020',
-    description: 'In diesem Kurs habe ich mich noch einmal ausführlich mit CSS3 beschäftigt und u.a. eine Einführung in SASS erhalten.',
+    description: 'In diesem Kurs habe ich mich noch einmal ausführlich mit CSS3 beschäftigt und u.a. eine Einführung in ' +
+      'SASS bzw. SCSS erhalten.',
     shown: false,
     certificate: 'Zertifikat',
-    certificateUrl: '',
+    certificateUrl: '/assets/certificates/UdemyCSSTheCompleteGuide2020.pdf',
   },
   {
     company: 'FreeCodeCamp Inc.',
     position: 'Studierende',
     specialization: 'JS - Algorithmen und Datenstrukturen',
     date: '05/2020 - 05/2020',
-    description: `In den Kursen der FreeCodeCamp Inc. habe ich einmal mehr Algorithmen und Datenstrukturen in JavaScript gelernt.`,
+    description: `In diesem Kurs der FreeCodeCamp Inc. habe ich mich tiefergehend mit Algorithmen und Datenstrukturen in JavaScript beschäftigt.
+                  Das hat mir geholfen, meine (anfänglich ausschließlich statischen) Webseiten mit Logik für bestimmte Funktionen zu erweitern.`,
     shown: false,
     certificate: 'Zertifikat',
-    certificateUrl: '',
+    certificateUrl: '/assets/certificates/FreeCodeCampCertificateJavaScriptAlgorithmsAndDataStructures.pdf',
   },
   {
     company: 'FreeCodeCamp Inc.',
     position: 'Studierende',
     specialization: 'Responsive Web Design',
     date: '04/2020 - 04/2020',
-    description: `In den Kursen der FreeCodeCamp Inc. habe ich wiederholt und ergänzend Responsive Web Design gelernt.`,
+    description: `In den Kursen der FreeCodeCamp Inc. habe ich wiederholt und ergänzend Responsive Web Design gelernt.
+                  Die Kurse sind sehr informativ und bieten viele Übungen und Anwendungsaufgaben, sowie Projekte,
+                  die zum Abschluss erstellt werden müssen, um alles Gelernte festigen zu können.`,
     shown: false,
     certificate: 'Zertifikat',
-    certificateUrl: '',
+    certificateUrl: '/assets/certificates/FreeCodeCampCertificateResponsiveWebDesign.pdf',
   },
   {
     company: 'Udacity Inc.',
     position: 'Studierende',
     specialization: 'Front End Web',
-    date: '01/2020 - 04/2020',
-    description: `Bereits neben dem Studium an der HDA habe ich mich bei den ersten Online-Kursen angemeldet und diese
-                  erfolgreich abgeschlossen, da ich bereits wusste, dass ich unbedingt in den Bereich Front End Web wollte und
-                  anhand der Rahmenlehrpläne ersichtlich wurde, dass dies nur einen kleinen Teil des Studiums ausmachen würde.
-                  In den Kursen von Udacity habe ich eine gute Einführung in die Programmierung und das Front End Deveopment erhalten.`,
+    date: '03/2020 - 04/2020',
+    description: `Da ich bereits wusste, dass ich unbedingt in den Bereich Front End Web wollte und
+                  anhand der Rahmenlehrpläne ersichtlich wurde, dass dies nur einen sehr kleinen Teil des Studiums ausmachen würde,
+                  habe ich einen weiteren Kurs bei Udacity absolviert und einen umfassenden Eindruck des Web Developments bekommen.
+                  Dadurch wurde mir noch einmal ganz deutlich, dass dies genau der Bereich ist, den ich vertiefen möchte.`,
     shown: false,
     certificate: 'Zertifikat',
-    certificateUrl: '',
+    certificateUrl: '/assets/certificates/NanodegreeFrontEndDeveloper.pdf',
+  },
+  {
+    company: 'Udacity Inc.',
+    position: 'Studierende',
+    specialization: 'Einführung Programmierung',
+    date: '01/2020 - 02/2020',
+    description: `Bereits neben dem Studium an der HDA habe ich mich bei dem ersten Online-Kurs angemeldet und dieses
+                  erfolgreich abgeschlossen. In dem Kurs von Udacity habe ich eine gute Einführung in die Programmierung
+                  allgemein erhalten.`,
+    shown: false,
+    certificate: 'Zertifikat',
+    certificateUrl: '/assets/certificates/NanodegreeIntroToProgramming.pdf',
   },
   {
     company: 'Hochschule Darmstadt',
@@ -91,8 +109,8 @@ export const stations: CareerStation[] = [
     specialization: 'Informatik | KMI',
     date: '10/2019 - 03/2020',
     description: `Das Studium an der HDA habe ich angebrochen. Auslöser dafür war die Corona-Pandemie und die damit
-                   einhergehenden Schulschließungen.
-                   Dies ermöglichte es mir jedoch, mich konkret auf Front End Development zu konzentrieren.`,
+                  einhergehenden Schulschließungen und Unsicherheiten.
+                  Dies ermöglichte es mir jedoch, mich konkret auf Front End Development zu konzentrieren.`,
     shown: false,
   },
   {
@@ -101,7 +119,7 @@ export const stations: CareerStation[] = [
     specialization: 'Front End Web',
     date: '07/2019 - 10/2019',
     description: `Nach einem Urlaub in meiner Heimat habe ich begonnen, die ersten Bücher zum Thema HTML5 und CSS3
-                   zu lesen und meine ersten statischen Webseiten erstellt, bis zum Beginn meines Studiums an der Hochschule Darmstadt.`,
+                   zu lesen und meine ersten statischen Webseiten erstellt bis zum Beginn meines Studiums an der Hochschule Darmstadt.`,
     shown: false,
   },
   {
@@ -109,13 +127,13 @@ export const stations: CareerStation[] = [
     position: 'Studierende',
     specialization: 'Betriebswirtschaftslehre',
     date: '08/2017 - 06/2019',
-    description: `Da ich ursprünglich Wirtschaftsinformatik studieren wollte, ich jedoch kein Abitur hatte, hatte ich mir überlegt,
-                   den staatl. geprüften Betriebswirten zu absolvieren und zeitgleich mein Fachabitur zu erwerben, um an einer Hochschule
+    description: `Da ich ursprünglich Wirtschaftsinformatik studieren wollte, ich jedoch kein Abitur hatte, habe ich
+                   den staatl. geprüften Betriebswirten absolviert und zeitgleich mein Fachabitur erworben, um an einer Hochschule
                    studieren zu können. Da ich nun bereits einen Abschluss in Bereich Betriebswirtschaft hatte, habe ich mich an der
                    Hochschule für Informatik entschieden.`,
     shown: false,
     certificate: 'Zeugnis',
-    certificateUrl: '',
+    certificateUrl: '/assets/certificates/BetriebswirtAbschlusszeugnis.pdf',
   },
   {
     company: 'Verschiedenes',
@@ -134,38 +152,6 @@ export const stations: CareerStation[] = [
   }
 ];
 
-export const certificatePreview: PreviewModel[] = [
-  {
-    preview: './assets/previews/nanodegree-intro-into-programming.jpg',
-    label: 'NanoDegree - Intro Into Programming',
-    url: 'assets/certificates/NanodegreeIntroToProgramming.pdf'
-  },
-  {
-    preview: './assets/previews/nanodegree-front-end-developer.jpg',
-    label: 'NanoDegree - Front End Developer',
-    url: 'assets/certificates/NanodegreeFrontEndDeveloper.pdf'
-  },
-  {
-    preview: './assets/previews/certificate-responsive-web-design.jpg',
-    label: 'Zertifikat - Responsive Web Design',
-    url: 'assets/certificates/FreeCodeCampCertificateResponsiveWebDesign.pdf'
-  },
-  {
-    preview: './assets/previews/certificate-javascript-algorithms-and-data-structures.jpg',
-    label: 'Zertifikat - JavaScript Algorithmen & Datenstrukturen',
-    url: 'assets/certificates/FreeCodeCampCertificateJavaScriptAlgorithmsAndDataStructures.pdf'
-  },
-  {
-    preview: './assets/previews/certificate-css-the-complete-guide.jpg',
-    label: 'Zertifikat - CSS - The Complete Guide 2020 (inkl. Flexbox, Grid & Sass)',
-    url: 'assets/certificates/UdemyCSSTheCompleteGuide2020.pdf'
-  },
-  {
-    preview: './assets/previews/certificate-angular(2+)-vertehen-und-anwenden.jpg',
-    label: 'Zertifikat - Angular (2+) verstehen und anwenden',
-    url: 'assets/certificates/UdemyAngular(2+)VerstehenUndAnwenden.pdf'
-  },
-];
 
 export interface CareerStation {
   company: string;
@@ -176,10 +162,4 @@ export interface CareerStation {
   shown: boolean;
   certificate?: string;
   certificateUrl?: string;
-}
-
-export interface PreviewModel {
-  preview: string;
-  label: string;
-  url: string;
 }

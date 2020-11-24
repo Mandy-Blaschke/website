@@ -15,7 +15,7 @@ section {
   margin: 130px 0 25px 0;
 
   .arrow {
-    background-color: main.$green-background-color;
+    background-color: #AADBC2;
     height: 50px;
     width: 50px;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
@@ -28,7 +28,7 @@ section {
     max-width: 850px;
 
     .left-box {
-      border-right: 5px solid main.$green-background-color;
+      border-right: 5px solid #AADBC2;
     }
 
     .stations {
@@ -39,7 +39,7 @@ section {
       .line {
         height: 5px;
         width: 380px;
-        background-color: main.$green-background-color;
+        background-color: #AADBC2;
       }
 
       .left, .right {
@@ -131,7 +131,7 @@ section {
     transform: scale(1) translateY(0px);
   }
   50% {
-    transform: scale(1.4) translateY(-7.5px);
+    transform: scale(1.4) translateY(-5px);
   }
   100% {
     transform: scale(1);
