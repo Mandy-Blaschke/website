@@ -35,6 +35,7 @@ section {
       color: #40BB76;
       animation: arrow infinite 1s;
       text-shadow: 2px 2px 2px main.$color-grey2;
+      user-select: none;
     }
   }
 }

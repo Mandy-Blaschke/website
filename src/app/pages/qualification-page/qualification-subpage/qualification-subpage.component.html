@@ -15,9 +15,16 @@
            [class.shown]="station.shown"
       >
 
+        <div class="banner">
+          <a href="{{station.certificateUrl}}" target="_blank"
+             *ngIf="station.certificate !== undefined">
+            {{station.certificate}}</a>
+        </div>
+
         <h2>{{station.company}}</h2>
         <h3>{{station.specialization}}</h3>
         <p class="date">{{station.date}}</p>
+
         <div class="line"></div>
 
         <div (click)="showDescriptionToggling(station)"
@@ -42,9 +49,16 @@
            [class.shown]="station.shown"
       >
 
+        <div class="banner">
+          <a href="{{station.certificateUrl}}" target="_blank"
+             *ngIf="station.certificate !== undefined">
+            {{station.certificate}}</a>
+        </div>
+
         <h2>{{station.company}}</h2>
         <h3>{{station.specialization}}</h3>
         <p class="date">{{station.date}}</p>
+
         <div class="line"></div>
 
         <div (click)="showDescriptionToggling(station)"

@@ -39,6 +39,8 @@ export const stations: CareerStation[] = [
     date: '11/2020 - 11/2020',
     description: 'In diesem Kurs habe ich noch einmal die Grundlagen und weiterführende Inhalte von Angular(2+) gelernt.',
     shown: false,
+    certificate: 'Zertifikat',
+    certificateUrl: '',
   },
   {
     company: 'Udemy Inc.',
@@ -47,6 +49,8 @@ export const stations: CareerStation[] = [
     date: '05/2020 - 05/2020',
     description: 'In diesem Kurs habe ich mich noch einmal ausführlich mit CSS3 beschäftigt und u.a. eine Einführung in SASS erhalten.',
     shown: false,
+    certificate: 'Zertifikat',
+    certificateUrl: '',
   },
   {
     company: 'FreeCodeCamp Inc.',
@@ -55,6 +59,8 @@ export const stations: CareerStation[] = [
     date: '05/2020 - 05/2020',
     description: `In den Kursen der FreeCodeCamp Inc. habe ich einmal mehr Algorithmen und Datenstrukturen in JavaScript gelernt.`,
     shown: false,
+    certificate: 'Zertifikat',
+    certificateUrl: '',
   },
   {
     company: 'FreeCodeCamp Inc.',
@@ -63,6 +69,8 @@ export const stations: CareerStation[] = [
     date: '04/2020 - 04/2020',
     description: `In den Kursen der FreeCodeCamp Inc. habe ich wiederholt und ergänzend Responsive Web Design gelernt.`,
     shown: false,
+    certificate: 'Zertifikat',
+    certificateUrl: '',
   },
   {
     company: 'Udacity Inc.',
@@ -74,6 +82,8 @@ export const stations: CareerStation[] = [
                   anhand der Rahmenlehrpläne ersichtlich wurde, dass dies nur einen kleinen Teil des Studiums ausmachen würde.
                   In den Kursen von Udacity habe ich eine gute Einführung in die Programmierung und das Front End Deveopment erhalten.`,
     shown: false,
+    certificate: 'Zertifikat',
+    certificateUrl: '',
   },
   {
     company: 'Hochschule Darmstadt',
@@ -104,6 +114,8 @@ export const stations: CareerStation[] = [
                    studieren zu können. Da ich nun bereits einen Abschluss in Bereich Betriebswirtschaft hatte, habe ich mich an der
                    Hochschule für Informatik entschieden.`,
     shown: false,
+    certificate: 'Zeugnis',
+    certificateUrl: '',
   },
   {
     company: 'Verschiedenes',
@@ -162,6 +174,8 @@ export interface CareerStation {
   date: string;
   description: string;
   shown: boolean;
+  certificate?: string;
+  certificateUrl?: string;
 }
 
 export interface PreviewModel {
