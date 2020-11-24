@@ -23,7 +23,7 @@ export class PortfolioSubpageComponent implements OnInit {
 export const projects: Project[] = [
   {
     title: 'Homepage',
-    description: 'Das ist meine alte Homepage.',
+    description: 'Das ist meine alte Homepage. Auf dieser Seite finden Sie bei Bedarf noch immer weitere Informationen zu mir.',
     preview: '/assets/previews/webseite.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/homepage',
@@ -32,7 +32,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Portfolio',
-    description: 'Hier handelt es sich um mein vorheriges Portfolio.',
+    description: 'Hier handelt es sich um mein vorheriges Portfolio, auf der ich meine Projekte veröffentlicht habe.',
     preview: '/assets/previews/portfolio.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/portfolio',
@@ -41,7 +41,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Projekt Archiv',
-    description: 'Dies ist mein altes Projekt Archiv.',
+    description: 'Dies ist mein altes Projekt Archiv. In diesem habe ich alle Projekte gehabt, die ich nicht mehr auf Firebase veröffentlicht hatte.',
     preview: '/assets/previews/archiv.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/archiv',
@@ -50,7 +50,8 @@ export const projects: Project[] = [
   },
   {
     title: 'Schach',
-    description: 'Schachbrett, sodass zwei Spieler gegeneinander spielen können.',
+    description: 'Schachbrett, sodass zwei Spieler gegeneinander spielen können. ' +
+      'Die Regeln habe ich (noch?) nicht implementiert, aber eine Neustartfunktion ist vorhanden.',
     preview: '/assets/previews/schach.webp',
     url: '',
     gitUrl: '',
@@ -71,8 +72,8 @@ export const projects: Project[] = [
     title: 'TicTacToe',
     description: 'Das ist ein Drei-Gewinnt-Spiel, bei dem zwei Leute gegeneinander spielen können. ' +
       'Das ist meine neue Version von dem Spiel, dass ich dieses Mal mit dem Framework Angular erstellt habe.',
-    preview: '/assets/previews/tictactoe-preview.webp',
-    url: '/assets/previews/tictactoe2.webp',
+    preview: '/assets/previews/tictactoe2.webp',
+    url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/tic-tac-toe-game',
     tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
     pinned: true,
@@ -142,7 +143,8 @@ export const projects: Project[] = [
   },
   {
     title: 'Kalorientracker',
-    description: 'Kalorien-App, die den Locale Storage nutzt.',
+    description: 'Kalorien-App, die den Locale Storage nutzt. Bei dieser ist es möglich, einzelne Nahrungsmittel ' +
+      'oder einzelne Zutaten und dann in Summe die Mahlzeit hinzuzufügen.',
     preview: '/assets/previews/kalorien.webp',
     gitUrl: 'https://github.com/Mandy-Blaschke/energiebedarf',
     url: '/assets/kal-v1/',
@@ -151,7 +153,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Rechne Mal',
-    description: 'App, um die Malfolgen zu lernen, die ich für meine Nichte erstellt habe.',
+    description: 'App, um die Malfolgen zu lernen, die ich für meine Nichte erstellt habe, damit sie die Malfolgen lernen konnte.',
     preview: '/assets/previews/rechnen.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/malfolgen',
@@ -160,7 +162,7 @@ export const projects: Project[] = [
   },
   {
     title: 'ToDo-Liste',
-    description: 'Einfache ToDo-Liste.',
+    description: 'Einfache ToDo-Liste. ACHTUNG! Das Projekt hat weder aufwendige Styles, noch ist es responsive gestaltet.',
     preview: '/assets/previews/todo.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/todo-list',
@@ -169,7 +171,8 @@ export const projects: Project[] = [
   },
   {
     title: 'Adressbuch',
-    description: 'Diese Anwendung diente ausschließlich dem Lern-Effekt und ist nicht responsive.',
+    description: 'Diese Anwendung diente ausschließlich dem Lern-Effekt. ' +
+      'ACHTUNG! Das Projekt hat weder aufwendige Styles, noch ist es responsive gestaltet.',
     preview: '/assets/previews/adressbuch.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/adressbuch',
@@ -178,7 +181,8 @@ export const projects: Project[] = [
   },
   {
     title: 'Kundenverwaltung',
-    description: 'Diese Anwendung diente ausschließlich dem Lern-Effekt und ist nicht responsive.',
+    description: 'Diese Anwendung diente ausschließlich dem Lern-Effekt. ' +
+      'ACHTUNG! Das Projekt hat weder aufwendige Styles, noch ist es responsive gestaltet.',
     preview: '/assets/previews/kunden.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/kundenverwaltung',
@@ -224,7 +228,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Portfolio Page',
-    description: 'Projekt aus meinen Kursen bei FreeCodeCamp.',
+    description: 'Projekt aus meinen Kursen bei FreeCodeCamp. Zum Bestehen war die Einhaltung bestimmter Vorgaben notwendig.',
     preview: '/assets/previews/portfolio1.webp',
     url: 'https://codepen.io/M-Andy89/pen/GRprbMQ',
     gitUrl: 'https://github.com/Mandy-Blaschke/freecodecamp-projects',
@@ -233,7 +237,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Documentation Page',
-    description: 'Projekt aus meinen Kursen bei FreeCodeCamp.',
+    description: 'Projekt aus meinen Kursen bei FreeCodeCamp. Zum Bestehen war die Einhaltung bestimmter Vorgaben notwendig.',
     preview: '/assets/previews/documentation.webp',
     url: 'https://codepen.io/M-Andy89/pen/yLYgOWZ',
     gitUrl: 'https://github.com/Mandy-Blaschke/freecodecamp-projects',
@@ -242,7 +246,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Survey Form',
-    description: 'Projekt aus meinen Kursen bei FreeCodeCamp.',
+    description: 'Projekt aus meinen Kursen bei FreeCodeCamp. Zum Bestehen war die Einhaltung bestimmter Vorgaben notwendig.',
     preview: '/assets/previews/survey.webp',
     url: 'https://codepen.io/M-Andy89/pen/GRpZBqb',
     gitUrl: 'https://github.com/Mandy-Blaschke/freecodecamp-projects',
@@ -251,7 +255,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Landing Page',
-    description: 'Projekt aus meinen Kursen bei FreeCodeCamp.',
+    description: 'Projekt aus meinen Kursen bei FreeCodeCamp. Zum Bestehen war die Einhaltung bestimmter Vorgaben notwendig.',
     preview: '/assets/previews/landing.webp',
     url: 'https://codepen.io/M-Andy89/pen/LYpNKPd',
     gitUrl: 'https://github.com/Mandy-Blaschke/freecodecamp-projects',
@@ -260,7 +264,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Tribute Page',
-    description: 'Projekt aus meinen Kursen bei FreeCodeCamp.',
+    description: 'Projekt aus meinen Kursen bei FreeCodeCamp. Zum Bestehen war die Einhaltung bestimmter Vorgaben notwendig.',
     preview: '/assets/previews/tribute.webp',
     url: 'https://codepen.io/M-Andy89/pen/pojyJGb',
     gitUrl: 'https://github.com/Mandy-Blaschke/freecodecamp-projects',
@@ -269,7 +273,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Blog Page',
-    description: 'Projekt aus meinem Udacity Kurs.',
+    description: 'Projekt aus meinem Udacity Kurs. Zum Bestehen war die Einhaltung bestimmter Vorgaben notwendig.',
     preview: '/assets/previews/blog.webp',
     url: '',
     gitUrl: 'https://github.com/Mandy-Blaschke/blog-page',
