@@ -1,26 +1,23 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-qualification-subpage',
   templateUrl: './qualification-subpage.component.html',
   styleUrls: ['./qualification-subpage.component.scss']
 })
-export class QualificationSubpageComponent implements OnInit {
+export class QualificationSubpageComponent {
 
-  quoteText = 'Wenn du den Eindruck hast, dass das Leben Theater ist, \n dann such dir eine Rolle aus, die dir so richtig Spaß macht.';
-  author = 'William Shakespeare';
+  quoteText = 'Um große Erfolge zu erreichen, muss etwas gewagt werden.';
+  author = 'Helmuth von Moltke';
 
   stations = stations;
 
   leftSide = this.stations.filter((station) => this.stations.indexOf(station) % 2 === 0);
   rightSide = this.stations.filter((station) => this.stations.indexOf(station) % 2 !== 0);
 
-  constructor() {
+  showDescriptionToggling(station: CareerStation): boolean {
+    return station.shown === false ? station.shown = true : station.shown = false;
   }
-
-  ngOnInit(): void {
-  }
-
 }
 
 
@@ -32,22 +29,40 @@ export const stations: CareerStation[] = [
     date: '06/2020 - heute',
     description: `Seit Juni lerne ich das Framework Angular mit Hilfe von Büchern und meinem Mann.
                   Demnächst werde ich weitere Kurse bei der Udemy Inc. absolvieren, um ein umfassendenderes
-                  Wissen zu erlangen und besser sowie schneller im Umgang mit dem Framework zu werden. `
+                  Wissen zu erlangen und besser sowie schneller im Umgang mit dem Framework zu werden. `,
+    shown: false,
   },
   {
     company: 'Udemy Inc.',
     position: 'Studierende',
-    specialization: 'Front End Web',
-    date: '05/2020 - 06/2020',
-    description: 'In diesem Kurs habe ich mich noch einmal ausführlich mit CSS3 beschäftigt und u.a. eine Einführung in SASS erhalten.'
+    specialization: 'Angular (2+)',
+    date: '11/2020 - 11/2020',
+    description: 'In diesem Kurs habe ich noch einmal die Grundlagen und weiterführende Inhalte von Angular(2+) gelernt.',
+    shown: false,
+  },
+  {
+    company: 'Udemy Inc.',
+    position: 'Studierende',
+    specialization: 'CSS & SCSS',
+    date: '05/2020 - 05/2020',
+    description: 'In diesem Kurs habe ich mich noch einmal ausführlich mit CSS3 beschäftigt und u.a. eine Einführung in SASS erhalten.',
+    shown: false,
   },
   {
     company: 'FreeCodeCamp Inc.',
     position: 'Studierende',
-    specialization: 'Front End Web',
-    date: '04/2020 - 05/2020',
-    description: `In den Kursen der FreeCodeCamp Inc. habe ich wiederholt und ergänzend Responsive Web Design,
-                  sowie Algorithmen und Datenstrukturen in JavaScript gelernt.`
+    specialization: 'JS - Algorithmen und Datenstrukturen',
+    date: '05/2020 - 05/2020',
+    description: `In den Kursen der FreeCodeCamp Inc. habe ich einmal mehr Algorithmen und Datenstrukturen in JavaScript gelernt.`,
+    shown: false,
+  },
+  {
+    company: 'FreeCodeCamp Inc.',
+    position: 'Studierende',
+    specialization: 'Responsive Web Design',
+    date: '04/2020 - 04/2020',
+    description: `In den Kursen der FreeCodeCamp Inc. habe ich wiederholt und ergänzend Responsive Web Design gelernt.`,
+    shown: false,
   },
   {
     company: 'Udacity Inc.',
@@ -57,16 +72,18 @@ export const stations: CareerStation[] = [
     description: `Bereits neben dem Studium an der HDA habe ich mich bei den ersten Online-Kursen angemeldet und diese
                   erfolgreich abgeschlossen, da ich bereits wusste, dass ich unbedingt in den Bereich Front End Web wollte und
                   anhand der Rahmenlehrpläne ersichtlich wurde, dass dies nur einen kleinen Teil des Studiums ausmachen würde.
-                  In den Kursen von Udacity habe ich eine gute Einführung in die Programmierung und das Front End Deveopment erhalten.`
+                  In den Kursen von Udacity habe ich eine gute Einführung in die Programmierung und das Front End Deveopment erhalten.`,
+    shown: false,
   },
   {
-    company: 'Hochschule Darmstadt - University of Applied Science',
+    company: 'Hochschule Darmstadt',
     position: 'Studierende',
     specialization: 'Informatik | KMI',
     date: '10/2019 - 03/2020',
     description: `Das Studium an der HDA habe ich angebrochen. Auslöser dafür war die Corona-Pandemie und die damit
                    einhergehenden Schulschließungen.
-                   Dies ermöglichte es mir jedoch, mich konkret auf Front End Development zu konzentrieren.`
+                   Dies ermöglichte es mir jedoch, mich konkret auf Front End Development zu konzentrieren.`,
+    shown: false,
   },
   {
     company: 'Ferien/ Selbststudium',
@@ -74,20 +91,22 @@ export const stations: CareerStation[] = [
     specialization: 'Front End Web',
     date: '07/2019 - 10/2019',
     description: `Nach einem Urlaub in meiner Heimat habe ich begonnen, die ersten Bücher zum Thema HTML5 und CSS3
-                   zu lesen und meine ersten statischen Webseiten erstellt, bis zum Beginn meines Studiums an der Hochschule Darmstadt.`
+                   zu lesen und meine ersten statischen Webseiten erstellt, bis zum Beginn meines Studiums an der Hochschule Darmstadt.`,
+    shown: false,
   },
   {
-    company: 'Wilhelm-Merton-Schule | Bereich Fachschule für Betriebswirtschaft',
+    company: 'Wilhelm-Merton-Schule',
     position: 'Studierende',
     specialization: 'Betriebswirtschaftslehre',
     date: '08/2017 - 06/2019',
     description: `Da ich ursprünglich Wirtschaftsinformatik studieren wollte, ich jedoch kein Abitur hatte, hatte ich mir überlegt,
                    den staatl. geprüften Betriebswirten zu absolvieren und zeitgleich mein Fachabitur zu erwerben, um an einer Hochschule
                    studieren zu können. Da ich nun bereits einen Abschluss in Bereich Betriebswirtschaft hatte, habe ich mich an der
-                   Hochschule für Informatik entschieden.`
+                   Hochschule für Informatik entschieden.`,
+    shown: false,
   },
   {
-    company: 'Verschiedene',
+    company: 'Verschiedenes',
     position: 'Verschiedenes',
     specialization: '',
     date: '2007 - 08/2017',
@@ -98,7 +117,8 @@ export const stations: CareerStation[] = [
                   All diese Tätigkeiten haben mich jedoch nicht glücklich gemacht. \n
                   Deshalb habe ich entschieden, mich weiter zu bilden, mein Abitur nachzuholen und in eine Tätigkeit zu investieren,
                   die Zukunft hat und anspruchsvoll ist.
-                  So richtig wohl fühle ich mich erst seit ich begonnen habe, meine ersten Webseiten zu erstellen.`
+                  So richtig wohl fühle ich mich erst seit ich begonnen habe, meine ersten Webseiten zu erstellen.`,
+    shown: false,
   }
 ];
 
@@ -141,6 +161,7 @@ export interface CareerStation {
   specialization: string;
   date: string;
   description: string;
+  shown: boolean;
 }
 
 export interface PreviewModel {

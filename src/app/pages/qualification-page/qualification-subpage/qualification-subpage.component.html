@@ -4,23 +4,64 @@
 
   <app-quote [author]="author" [quoteText]="quoteText"></app-quote>
 
+  <div class="arrow"></div>
+
   <div class="cv-box">
 
-    <div class="stations">
-      <div class="left" *ngFor="let station of leftSide">
-        {{station.company}}
-        {{station.date}}
-        {{station.description}}
+    <div class="stations left-box">
+
+      <div *ngFor="let station of leftSide"
+           class="left"
+           [class.shown]="station.shown"
+      >
+
+        <h2>{{station.company}}</h2>
+        <h3>{{station.specialization}}</h3>
+        <p class="date">{{station.date}}</p>
+        <div class="line"></div>
+
+        <div (click)="showDescriptionToggling(station)"
+             class="toggle"
+        >
+          <p *ngIf="!station.shown">Mehr erfahren!</p>
+          <p *ngIf="station.shown">Ausblenden</p>
+        </div>
+
+        <p *ngIf="station.shown"
+           class="description"
+        >
+          {{station.description}}</p>
       </div>
+
     </div>
 
-    <div class="stations">
-      <div class="right" *ngFor="let station of rightSide">
-        {{station.company}}
-        {{station.date}}
-        {{station.description}}
+    <div class="stations right-box">
+
+      <div *ngFor="let station of rightSide"
+           class="right"
+           [class.shown]="station.shown"
+      >
+
+        <h2>{{station.company}}</h2>
+        <h3>{{station.specialization}}</h3>
+        <p class="date">{{station.date}}</p>
+        <div class="line"></div>
+
+        <div (click)="showDescriptionToggling(station)"
+             class="toggle"
+        >
+          <p *ngIf="!station.shown">Mehr erfahren!</p>
+          <p *ngIf="station.shown">Ausblenden</p>
+        </div>
+
+        <p *ngIf="station.shown"
+           class="description"
+        >
+          {{station.description}}</p>
       </div>
+
     </div>
+
 
   </div>
 

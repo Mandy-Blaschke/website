@@ -14,38 +14,102 @@ section {
   align-items: center;
   margin: 130px 0 25px 0;
 
+  .arrow {
+    background-color: main.$green-background-color;
+    height: 50px;
+    width: 50px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation: scaling infinite 3s linear;
+    animation-delay: 2s;
+  }
 
   .cv-box {
     display: flex;
     max-width: 850px;
+
+    .left-box {
+      border-right: 5px solid main.$green-background-color;
+    }
 
     .stations {
       display: flex;
       flex-direction: column;
       width: 50%;
 
-      .left, .right {
-        min-height: 200px;
+      .line {
+        height: 5px;
+        width: 380px;
+        background-color: main.$green-background-color;
+      }
 
+      .left, .right {
+        box-sizing: content-box;
+        height: 200px;
+        max-width: 350px;
+        padding: 15px;
+        margin: 15px;
+        box-shadow: 0 0 15px main.$color-grey1;
+
+        &.shown {
+          height: fit-content;
+        }
+
+        .toggle {
+          p {
+            display: inline-block;
+            padding: 0 5px;
+            margin: 25px 0;
+            font-weight: 700;
+            color: main.$color-pink;
+            user-select: none;
+
+            &:hover, &:active {
+              cursor: pointer;
+              background-color: main.$color-pink;
+              color: main.$color-white;
+            }
+          }
+        }
+
+        h2 {
+          color: main.$color-green1;
+        }
+
+        h3 {
+          color: lighten(main.$color-green1, 15%);
+        }
+
+        .description {
+          text-align: justify;
+        }
+
+        .date {
+          font-size: 0.8rem;
+        }
       }
 
       .left {
-        border: 3px solid #9e61b8;
-        margin: 0 0 80px 0;
-
-        &:first-child {
-          margin: 40px 0;
-        }
       }
 
       .right {
-        border: 3px solid #40BB76;
-        margin: 80px 0;
+        margin-top: 75px;
 
-        &:last-child {
-          margin: 0;
+        .line {
+          transform: translateX(-33px);
         }
       }
     }
+  }
+}
+
+@keyframes scaling {
+  0% {
+    transform: scale(1) translateY(0px);
+  }
+  50% {
+    transform: scale(1.3) translateY(-5px);
+  }
+  100% {
+    transform: scale(1);
   }
 }
