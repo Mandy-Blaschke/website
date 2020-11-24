@@ -1,1 +1,28 @@
-<p>qualification-subpage works!</p>
+<app-header></app-header>
+
+<section>
+
+  <app-quote [author]="author" [quoteText]="quoteText"></app-quote>
+
+  <div class="cv-box">
+
+    <div class="stations">
+      <div class="left" *ngFor="let station of leftSide">
+        {{station.company}}
+        {{station.date}}
+        {{station.description}}
+      </div>
+    </div>
+
+    <div class="stations">
+      <div class="right" *ngFor="let station of rightSide">
+        {{station.company}}
+        {{station.date}}
+        {{station.description}}
+      </div>
+    </div>
+
+  </div>
+
+
+</section>

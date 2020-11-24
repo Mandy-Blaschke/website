@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StartPageComponent } from './pages/start-page/start-page.component';
 import { HeaderComponent } from './common/header/header.component';
-import { FooterComponent } from './common/footer/footer.component';
 import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.component';
 import { QualificationPageComponent } from './pages/qualification-page/qualification-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
@@ -16,13 +15,13 @@ import { PortfolioSubpageComponent } from './pages/portfolio-page/portfolio-subp
 import { PinnedCardComponent } from './pages/portfolio-page/portfolio-subpage/pinned-card/pinned-card.component';
 import { ArchivedCardComponent } from './pages/portfolio-page/portfolio-subpage/archived-card/archived-card.component';
 import { QualificationSubpageComponent } from './pages/qualification-page/qualification-subpage/qualification-subpage.component';
+import { QuoteComponent } from './common/quote/quote.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StartPageComponent,
     HeaderComponent,
-    FooterComponent,
     PortfolioPageComponent,
     QualificationPageComponent,
     ContactPageComponent,
@@ -33,6 +32,7 @@ import { QualificationSubpageComponent } from './pages/qualification-page/qualif
     PinnedCardComponent,
     ArchivedCardComponent,
     QualificationSubpageComponent,
+    QuoteComponent,
   ],
   imports: [
     BrowserModule,
