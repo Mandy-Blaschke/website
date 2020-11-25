@@ -1,5 +1,38 @@
 @use "src/app/main";
 
+.tag-filter {
+  display: flex;
+  flex-direction: column;
+  margin: 175px 0 25px 0;
+
+  .tag-box {
+    display: flex;
+    justify-content: space-evenly;
+
+    .tag {
+      margin-bottom: 0;
+
+      &.activeTag {
+        font-weight: 700;
+        color: main.$color-green1;
+      }
+
+      &:hover, &:active {
+        cursor: pointer;
+        font-weight: 700;
+        color: main.$color-pink;
+      }
+    }
+  }
+
+  .bottom {
+    width: 100%;
+    height: 25px;
+    background-image: linear-gradient(#f8f8ff 35%, #AADBC2);
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+  }
+}
+
 .card-box {
   display: flex;
   flex-wrap: wrap;

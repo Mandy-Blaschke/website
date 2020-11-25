@@ -27,7 +27,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/webseite.webp',
     url: '/assets/projects/website-v5/',
     gitUrl: 'https://github.com/Mandy-Blaschke/homepage',
-    tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
+    tags: ['Responsive', 'Angular', 'Statisch', 'Blickfang'],
     pinned: false,
   },
   {
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/portfolio.webp',
     url: '/assets/projects/portfolio/',
     gitUrl: 'https://github.com/Mandy-Blaschke/portfolio',
-    tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
+    tags: ['Responsive', 'Angular', 'Statisch', 'Blickfang'],
     pinned: false,
   },
   {
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/archiv.webp',
     url: '/assets/projects/archiv/',
     gitUrl: 'https://github.com/Mandy-Blaschke/archiv',
-    tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
+    tags: ['Responsive', 'Angular', 'Statisch'],
     pinned: false,
   },
   {
@@ -55,7 +55,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/schach.webp',
     url: '/assets/projects/chess/',
     gitUrl: 'https://github.com/Mandy-Blaschke/chess',
-    tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
+    tags: ['Responsive', 'Angular', 'Interaktiv'],
     pinned: false,
   },
   {
@@ -65,7 +65,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/hangman2.webp',
     url: '/assets/projects/hangman-game/',
     gitUrl: 'https://github.com/Mandy-Blaschke/hangman-game',
-    tags: ['HTML', 'CSS', 'JavaScript'],
+    tags: ['Responsive', 'Angular', 'Interaktiv', 'Blickfang'],
     pinned: false,
   },
   {
@@ -75,7 +75,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/tictactoe2.webp',
     url: '/assets/projects/tictactoe/',
     gitUrl: 'https://github.com/Mandy-Blaschke/tic-tac-toe-game',
-    tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
+    tags: ['Responsive', 'Angular', 'Interaktiv', 'Blickfang'],
     pinned: true,
   },
   {
@@ -84,7 +84,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/17und4.webp',
     url: '/assets/projects/siebzehn-und-vier/index.html',
     gitUrl: 'https://github.com/Mandy-Blaschke/siebzehn-und-vier',
-    tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
+    tags: ['Responsive', 'Angular', 'Interaktiv'],
     pinned: false,
   },
   {
@@ -95,7 +95,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/pomodoro.webp',
     url: '/assets/projects/pomodoro/',
     gitUrl: 'https://github.com/Mandy-Blaschke/pomodoro-clock',
-    tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
+    tags: ['Responsive', 'Angular', 'Interaktiv', 'Blickfang'],
     pinned: false,
   },
   {
@@ -106,7 +106,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/senso.webp',
     url: '/assets/projects/senso/',
     gitUrl: 'https://github.com/Mandy-Blaschke/senso-game',
-    tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
+    tags: ['Responsive', 'Angular', 'Interaktiv'],
     pinned: false,
   },
   {
@@ -118,7 +118,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/mole.webp',
     url: '/assets/projects/whack-a-mole/index.html',
     gitUrl: 'https://github.com/Mandy-Blaschke/whack-a-mole',
-    tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
+    tags: ['Responsive', 'Angular', 'Interaktiv', 'Blickfang'],
     pinned: true,
   },
   {
@@ -128,7 +128,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/memory.webp',
     url: '/assets/projects/memory-v1/',
     gitUrl: 'https://github.com/Mandy-Blaschke/memory-game',
-    tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
+    tags: ['Responsive', 'Angular', 'Interaktiv'],
     pinned: true,
   },
   {
@@ -138,7 +138,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/giess-app.webp',
     url: '/assets/projects/plant-watering2',
     gitUrl: 'https://github.com/Mandy-Blaschke/vergiess-mein-nicht',
-    tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
+    tags: ['Responsive', 'Angular', 'Interaktiv', 'Blickfang'],
     pinned: false,
   },
   {
@@ -148,7 +148,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/kalorien.webp',
     url: '/assets/projects/kal-v1/',
     gitUrl: 'https://github.com/Mandy-Blaschke/energiebedarf',
-    tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
+    tags: ['Responsive', 'Angular', 'Interaktiv'],
     pinned: false,
   },
   {
@@ -157,7 +157,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/rechnen.webp',
     url: '/assets/projects/mathe-app/',
     gitUrl: 'https://github.com/Mandy-Blaschke/malfolgen',
-    tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
+    tags: ['Responsive', 'Angular', 'Interaktiv'],
     pinned: false,
   },
   {
@@ -166,7 +166,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/todo.webp',
     url: '/assets/projects/todo/',
     gitUrl: 'https://github.com/Mandy-Blaschke/todo-list',
-    tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
+    tags: ['Angular', 'Interaktiv'],
     pinned: false,
   },
   {
@@ -176,7 +176,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/adressbuch.webp',
     url: '/assets/projects/adress/index.html',
     gitUrl: 'https://github.com/Mandy-Blaschke/adressbuch',
-    tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
+    tags: ['Angular', 'Interaktiv'],
     pinned: false,
   },
   {
@@ -186,7 +186,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/kunden.webp',
     url: '/assets/projects/kund/',
     gitUrl: 'https://github.com/Mandy-Blaschke/kundenverwaltung',
-    tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
+    tags: ['Angular', 'Interaktiv'],
     pinned: false,
   },
   {
@@ -195,7 +195,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/hangman1.webp',
     url: '/assets/projects/hangman-game/sources/index.html',
     gitUrl: 'https://github.com/Mandy-Blaschke/hangman-game',
-    tags: ['HTML', 'CSS', 'JavaScript'],
+    tags: ['Responsive', 'JavaScript', 'Interaktiv'],
     pinned: false,
   },
   {
@@ -205,7 +205,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/tictactoe1.webp',
     url: '/assets/projects/tic-tac-toe-game/sources/index.html',
     gitUrl: 'https://github.com/Mandy-Blaschke/tic-tac-toe-game',
-    tags: ['HTML', 'CSS', 'JavaScript'],
+    tags: ['Responsive', 'JavaScript', 'Interaktiv'],
     pinned: false,
   },
   {
@@ -214,7 +214,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/schere-stein-papier.webp',
     url: '/assets/projects/scissors-stone-paper-game/sources/index.html',
     gitUrl: 'https://github.com/Mandy-Blaschke/scissors-stone-paper-game',
-    tags: ['HTML', 'CSS', 'JavaScript'],
+    tags: ['Responsive', 'JavaScript', 'Interaktiv'],
     pinned: false,
   },
   {
@@ -223,7 +223,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/zahlen-raten.webp',
     url: '/assets/projects/zahlen-raten-spiel/sources/index.html',
     gitUrl: 'https://github.com/Mandy-Blaschke/zahlen-raten-spiel',
-    tags: ['HTML', 'CSS', 'JavaScript'],
+    tags: ['Responsive', 'JavaScript', 'Interaktiv'],
     pinned: false,
   },
   {
@@ -232,7 +232,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/portfolio1.webp',
     url: 'https://codepen.io/M-Andy89/pen/GRprbMQ',
     gitUrl: 'https://github.com/Mandy-Blaschke/freecodecamp-projects',
-    tags: ['FreeCodeCamp', 'Kurs-Projekt', 'HTML', 'CSS'],
+    tags: ['Responsive', 'Kurs-Projekt', 'Statisch'],
     pinned: false,
   },
   {
@@ -241,7 +241,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/documentation.webp',
     url: 'https://codepen.io/M-Andy89/pen/yLYgOWZ',
     gitUrl: 'https://github.com/Mandy-Blaschke/freecodecamp-projects',
-    tags: ['FreeCodeCamp', 'Kurs-Projekt', 'HTML', 'CSS'],
+    tags: ['Responsive', 'Kurs-Projekt', 'Statisch'],
     pinned: false,
   },
   {
@@ -250,7 +250,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/survey.webp',
     url: 'https://codepen.io/M-Andy89/pen/GRpZBqb',
     gitUrl: 'https://github.com/Mandy-Blaschke/freecodecamp-projects',
-    tags: ['FreeCodeCamp', 'Kurs-Projekt', 'HTML', 'CSS'],
+    tags: ['Responsive', 'Kurs-Projekt', 'Statisch'],
     pinned: false,
   },
   {
@@ -259,7 +259,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/landing.webp',
     url: 'https://codepen.io/M-Andy89/pen/LYpNKPd',
     gitUrl: 'https://github.com/Mandy-Blaschke/freecodecamp-projects',
-    tags: ['FreeCodeCamp', 'Kurs-Projekt', 'HTML', 'CSS'],
+    tags: ['Responsive', 'Kurs-Projekt', 'Statisch'],
     pinned: false,
   },
   {
@@ -268,7 +268,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/tribute.webp',
     url: 'https://codepen.io/M-Andy89/pen/pojyJGb',
     gitUrl: 'https://github.com/Mandy-Blaschke/freecodecamp-projects',
-    tags: ['FreeCodeCamp', 'Kurs-Projekt', 'HTML', 'CSS'],
+    tags: ['Responsive', 'Kurs-Projekt', 'Statisch'],
     pinned: false,
   },
   {
@@ -277,7 +277,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/blog.webp',
     url: '/assets/projects/blog-page/sources/index.html',
     gitUrl: 'https://github.com/Mandy-Blaschke/blog-page',
-    tags: ['Udacity', 'Kurs-Projekt', 'HTML', 'CSS'],
+    tags: ['Responsive', 'Kurs-Projekt', 'Statisch'],
     pinned: false,
   },
 ];

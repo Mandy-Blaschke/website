@@ -1,7 +1,16 @@
 <div class="tag-filter">
-  <div *ngFor="let tag of filterTags">
-    <p (click)="filterProjectsByTag(tag)">{{tag}}</p>
+  <div class="tag-box">
+    <div *ngFor="let tag of filterTags">
+      <p (click)="filterProjectsByTag(tag)"
+         class="tag"
+         [class.activeTag]="tag === activeTag"
+      >
+        {{tag}}
+      </p>
+    </div>
   </div>
+
+  <div class="bottom"></div>
 </div>
 
 

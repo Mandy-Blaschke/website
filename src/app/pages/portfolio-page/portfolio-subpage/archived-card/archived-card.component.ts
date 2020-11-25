@@ -10,8 +10,9 @@ export class ArchivedCardComponent implements OnInit {
 
   @Input() archivedProject: Project[];
 
-  filterTags: string[] = ['ALLE', 'HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular', 'Kurs-Projekt'];
+  activeTag = 'ALLE';
 
+  filterTags: string[] = ['ALLE', 'Responsive', 'Blickfang', 'Interaktiv', 'Angular', 'JavaScript', 'Kurs-Projekt', 'Statisch'];
   projectsToShow: Project[] = [];
 
   constructor() {
@@ -24,8 +25,10 @@ export class ArchivedCardComponent implements OnInit {
   filterProjectsByTag(tag: string): void {
     if (tag === 'ALLE') {
       this.projectsToShow = this.archivedProject;
+      this.activeTag = 'ALLE';
     } else {
     this.projectsToShow = this.archivedProject.filter((project) => project.tags.includes(tag));
+    this.activeTag = tag;
     }
   }
 }
