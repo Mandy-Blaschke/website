@@ -54,7 +54,7 @@ export const projects: Project[] = [
       'Die Regeln habe ich (noch?) nicht implementiert, aber eine Neustartfunktion ist vorhanden.',
     preview: '/assets/previews/schach.webp',
     url: '/assets/projects/chess/',
-    gitUrl: '',
+    gitUrl: 'https://github.com/Mandy-Blaschke/chess',
     tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
     pinned: false,
   },
@@ -146,8 +146,8 @@ export const projects: Project[] = [
     description: 'Kalorien-App, die den Locale Storage nutzt. Bei dieser ist es möglich, einzelne Nahrungsmittel ' +
       'oder einzelne Zutaten und dann in Summe die Mahlzeit hinzuzufügen.',
     preview: '/assets/previews/kalorien.webp',
-    gitUrl: 'https://github.com/Mandy-Blaschke/energiebedarf',
     url: '/assets/projects/kal-v1/',
+    gitUrl: 'https://github.com/Mandy-Blaschke/energiebedarf',
     tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular'],
     pinned: false,
   },
