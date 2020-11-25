@@ -5,8 +5,6 @@ section {
 
   .pic {
     width: 40%;
-    display: flex;
-    align-items: center;
     background-image: url("~src/assets/Mandy.webp");
     background-size: contain;
     background-repeat: no-repeat;
@@ -36,6 +34,43 @@ section {
       animation: arrow infinite 1s;
       text-shadow: 2px 2px 2px main.$color-grey2;
       user-select: none;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    p {
+      font-size: 20px;
+    }
+    h1 {
+      font-size: 45px;
+    }
+  }
+
+  @media (max-width: 950px) {
+    .pic {
+      background-position: center;
+    }
+  }
+
+  @media (max-width: 460px) {
+    h1 {
+      font-size: 35px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+    margin-top: 150px;
+
+    .pic {
+      height: 350px;
+      width: 100%;
+      background-position: center;
+    }
+
+    .text {
+      width: 100%;
+      text-align: center;
     }
   }
 }

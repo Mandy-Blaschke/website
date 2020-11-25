@@ -41,4 +41,57 @@ section {
       }
     }
   }
+
+  @media (max-width: 765px) {
+    .phone-pic {
+
+      h1 {
+        font-size: 45px;
+      }
+
+      p {
+        font-size: 25px;
+      }
+    }
+  }
+
+  @media (max-width: 620px) {
+    .phone-pic {
+
+      h1 {
+        font-size: 35px;
+      }
+
+      p, a {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 520px) {
+    .phone-pic {
+      box-sizing: border-box;
+      padding: 0 0 25px 0;
+      width: 100%;
+      height: 70%;
+      background-image: url("~src/assets/phone-hoch.webp");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        font-size: 30px;
+        text-align: center;
+        line-break: strict;
+      }
+
+      p, a {
+        font-size: 20px;
+      }
+    }
+  }
 }
