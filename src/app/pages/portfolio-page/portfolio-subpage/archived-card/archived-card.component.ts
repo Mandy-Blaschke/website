@@ -8,12 +8,24 @@ import {Project} from '../portfolio-subpage.component';
 })
 export class ArchivedCardComponent implements OnInit {
 
-  @Input() archivedCard: Project[];
+  @Input() archivedProject: Project[];
+
+  filterTags: string[] = ['ALLE', 'HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular', 'Kurs-Projekt'];
+
+  projectsToShow: Project[] = [];
 
   constructor() {
   }
 
   ngOnInit(): void {
+    this.filterProjectsByTag('ALLE');
   }
 
+  filterProjectsByTag(tag: string): void {
+    if (tag === 'ALLE') {
+      this.projectsToShow = this.archivedProject;
+    } else {
+    this.projectsToShow = this.archivedProject.filter((project) => project.tags.includes(tag));
+    }
+  }
 }
