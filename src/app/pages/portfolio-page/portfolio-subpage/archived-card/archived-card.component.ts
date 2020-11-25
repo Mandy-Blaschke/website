@@ -10,8 +10,6 @@ export class ArchivedCardComponent implements OnInit {
 
   @Input() archivedCard: Project[];
 
-  filter: string[] = ['Alle', 'HTML', 'CSS', 'SCSS', 'JavaScript', 'TypeScript', 'Angular', 'Kurs-Projekt'];
-
   constructor() {
   }
 
