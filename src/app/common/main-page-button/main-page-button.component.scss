@@ -16,4 +16,12 @@ button {
     cursor: pointer;
     box-shadow: 0 0 5px main.$color-grey2;
   }
+
+  @media (max-width: 1198px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: 745px) {
+    font-size: 25px;
+  }
 }
