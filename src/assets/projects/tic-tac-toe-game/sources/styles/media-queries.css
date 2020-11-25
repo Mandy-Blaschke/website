@@ -1,0 +1,113 @@
+@media (max-width: 800px) {
+    p {
+        width: 90vw !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .gamePlay {
+        margin-top: 20px;
+    }
+
+    p {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 620px) {
+    .rowElement {
+        height: 150px;
+        width: 150px;
+    }
+
+    p {
+        width: 75vw;
+    }
+
+    h1 {
+        font-size: 6rem !important;
+    }
+
+    .winner {
+        font-size: 1.6rem;
+    }
+
+    button {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .rowElement {
+        height: 130px;
+        width: 130px;
+    }
+
+    .winner {
+        font-size: 1.6rem;
+    }
+
+    .activeRed div, .activeBlue div {
+        height: 85px;
+        width: 85px;
+    }
+
+    button {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .rowElement {
+        height: 115px;
+        width: 115px;
+    }
+
+    .activeRed div, .activeBlue div {
+        height: 65px;
+        width: 65px;
+    }
+
+    .winner {
+        font-size: 1.4rem;
+    }
+}
+
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 5rem !important;
+    }
+
+    p {
+        font-size: 1.3rem !important;
+    }
+
+    .rowElement {
+        height: 105px;
+        width: 105px;
+    }
+    .winner {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 360px) {
+    h1 {
+        font-size: 4rem !important;
+    }
+
+    .rowElement {
+        height: 95px;
+        width: 95px;
+    }
+
+    .winner {
+        font-size: 1.35rem;
+    }
+
+    .activeRed div, .activeBlue div {
+        height: 60px;
+        width: 60px;
+    }
+}

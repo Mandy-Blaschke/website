@@ -1,0 +1,155 @@
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    width: auto;
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 35%);
+}
+
+h1 {
+    margin: 0;
+    font-weight: 100;
+    font-size: 4rem;
+    color: hsl(0, 0%, 95%);
+    background-color: rgb(151, 179, 125);
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+@media(min-width: 600px) and (max-width:900px) {
+    h1 {
+        font-size: 3rem;
+        padding-left: 50px;
+    }
+}
+
+@media(max-width: 599px) {
+    h1 {
+        font-size: 1.5rem;
+        padding: 25px 20px 10px 20px;
+    }
+}
+
+.pageContent {
+    padding: 50px 100px;
+    min-height: 65vh;
+}
+
+@media(min-width: 600px) and (max-width: 900px) {
+    .pageContent {
+        padding: 25px 50px;
+        min-height: 65vh;
+    }
+}
+
+@media (max-width: 599px) {
+    .pageContent {
+        padding: 10px 20px;
+        min-height: 70vh;
+    }
+}
+
+.pageContent p {
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(160, 104, 59);
+}
+
+a:hover {
+    color: rgb(103, 104, 136);
+}
+
+.navi {
+    background-color: white;
+    padding-left: calc(100px - 1rem);
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .navi {
+        padding-left: 35px;
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 599px) {
+    .navi {
+        padding: 10px 5px;
+    }
+}
+
+.navi a {
+    display: inline-block;
+    padding: 20px 1rem;
+}
+
+@media(max-width: 599px) {
+    .navi a {
+        padding: 0 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+.buttons {
+    display: flex;
+    margin-top: 25px;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .buttons {
+        justify-content: center;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 599px) {
+    .buttons {
+        justify-content: center;
+        margin-top: 15px;
+    }
+}
+
+.buttons a {
+    margin-right: 10px;
+    padding: 10px;
+    display: inline-block;
+    min-width: 65px;
+    border-radius: 10%;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(195, 143, 100);
+    color: hsl(0, 0%, 95%);
+}
+
+.footer {
+    margin: 0;
+    font-weight: 100;
+    color: hsl(0, 0%, 95%);
+    background-color: rgb(151, 179, 125);
+    padding-left: 100px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .footer {
+        padding-left: 50px;
+        padding-bottom: 25px;
+    }
+}
+
+@media(max-width: 599px) {
+    .footer {
+        padding-left: 10px;
+        padding-bottom: 25px;
+    }
+}

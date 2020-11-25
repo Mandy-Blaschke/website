@@ -1,0 +1,142 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(211, 211, 211, 0.15);
+    font-family: 'Montserrat', 'Raleway', sans-serif;
+}
+
+h1 {
+    color: #760f78;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.hangman {
+    height: 300px;
+    width: 300px;
+    border: 2px solid black;
+    margin: 25px;
+    background-color: #ffffff;
+    background-size: contain;
+    background-position: center;
+}
+
+.displayLetterBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px;
+}
+
+.letterButtonsBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 304px;
+    padding: 5px;
+}
+
+.letterBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    border: 1px solid gray;
+    margin: 5px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 2px grey;
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #9b159e;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    font-size: 30px;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+button {
+    font-size: 20px;
+    box-shadow: 1px 1px 2px gray;
+    font-weight: bolder;
+    color: #430844;
+    margin-bottom: 25px;
+}
+
+.gz {
+    text-align: center;
+    font-weight: bold;
+    color: #760f78;
+    font-size: 2.5rem;
+    margin: 25px;
+    line-height: 3.5rem;
+    text-shadow: 2px 2px 8px #c39ec4;
+}
+
+.outerRules {
+    background-image: url(pictures/hangman-11.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: inherit;
+    margin: 25px;
+}
+
+.innerRules {
+    width: 630px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 40px;
+    line-height: 3.5rem;
+    border: 2px solid black;
+    backdrop-filter: blur(8px);
+}
+
+/* media-queries */
+
+@media (max-width: 770px){
+    .innerRules {
+        width: 440px;
+    }
+}
+
+@media (max-width: 580px){
+    h1{
+        font-size: 3rem;
+    }
+    .innerRules {
+        width: 370px;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 500px){
+    .innerRules {
+        width: 300px;
+    }
+}
+
+@media (max-width: 420px){
+    h1{
+        font-size: 2.6rem;
+    }
+    .innerRules {
+        width: 250px;
+        padding: 20px;
+    }
+    .hangman{
+        width: 250px;
+        height: 250px;
+    }
+}

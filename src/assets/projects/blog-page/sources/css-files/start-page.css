@@ -1,0 +1,120 @@
+@media(min-width: 600px) and (max-width:900px) {
+    h2 {
+        margin: 10px 0;
+    }
+}
+
+@media(max-width: 599px) {
+    h2 {
+        margin: 10px 0;
+    }
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 50px;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .cardGrid {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+    }
+}
+
+@media (max-width: 599px) {
+    .cardGrid {
+        grid-template-columns: auto;
+        grid-gap: 25px;
+    }
+}
+
+.cityBox {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 7px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 500ms;
+}
+
+.cityBox:hover {
+    transform: scale(1.2);
+}
+
+@media(max-width: 900px) {
+    .cityBox:hover {
+        transform: none;
+    }
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: hsl(0, 0%, 15%);
+    font-weight: 200;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width: 599px) {
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+.cityBox .image {
+    background-size: cover;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cityBox .boxContent {
+    padding: 20px;
+}
+
+.cityBox .cityDescription {
+    text-align: justify;
+}
+
+#newYork .image {
+    background-image: url("../pictures/america/new-york/ny-skyline.jpg");
+}
+
+#glasgow .image {
+    background-image: url("../pictures/england/glasgow/glasgow-river.jpg");
+}
+
+#frankfurt .image {
+    background-image: url("../pictures/germany/franfurt/frankfurt-towers.jpg");
+}
+
+#london .image {
+    background-image: url("../pictures/england/london/london-bridge.jpg");
+}
+
+#manchester .image {
+    background-image: url("../pictures/england/manchester/manchester-river.jpg");
+}
+
+#losAngeles .image {
+    background-image: url("../pictures/america/los-angeles/la-hollywood.jpg");
+}
+
+#berlin .image {
+    background-image: url("../pictures/germany/berlin/berlin-brandenburger-tor.jpg");
+}
+
+#moreSoon .image {
+    background-image: url("../pictures/start-seite/new-plans.jpg");
+}

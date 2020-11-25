@@ -1,0 +1,99 @@
+.gamePlay {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 45px;
+}
+
+.row {
+    display: flex;
+    background-color: white;
+}
+
+.rowElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 180px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+#field1, #field2, #field4, #field5 {
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#field3, #field6 {
+    border-bottom: 2px solid black;
+}
+
+#field7, #field8 {
+    border-right: 2px solid black;
+}
+
+.activeRed div, .activeBlue div {
+    height: 90px;
+    width: 90px;
+    margin: 15px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 7px black;
+}
+
+.activeBlue {
+    background-color: rgba(0, 0, 255, 0.15);
+}
+
+.activeBlue div {
+    background-image: linear-gradient(-50deg, blue, transparent);
+}
+
+.activeRed {
+    background-color: rgba(255, 0, 0, 0.15);
+}
+
+.activeRed div {
+    background-image: linear-gradient(-50deg, red, transparent);
+}
+
+.currentPlayerBlue, .currentPlayerRed {
+    font-size: 1.5rem;
+    margin: 25px 0 15px 0;
+}
+
+.currentPlayerRed {
+    color: red;
+}
+
+.currentPlayerBlue {
+    color: blue;
+}
+
+.winner {
+    font-size: 2rem;
+    color: greenyellow;
+    text-shadow: 0 1px 1px black;
+    animation: winner 2s infinite;
+    background-color: rgba(139, 0, 139, 0.8);
+    padding: 15px;
+    border-radius: 30px;
+}
+
+@keyframes winner {
+    from {
+        color: #2d8000;
+    }
+    to {
+        color: #0df118;
+    }
+    to {
+        color: #0fe513;
+    }
+    to {
+        color: #b2f3bb;
+    }
+}
+
+.noWinner {
+    color: purple;
+}

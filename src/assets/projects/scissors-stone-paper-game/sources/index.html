@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Poppins|Work+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="index.js"></script>
+    <title>Schere-Stein-Papier</title>
+</head>
+
+<header>
+    <h1>
+        Schere-Stein-Papier
+    </h1>
+</header>
+
+<body>
+
+<div class="gameStart">
+    <p>
+        Die Spielregeln sind einfach: <br>
+        Du wählst aus, was du spielen möchtest.
+        Gleichzeitig entscheidet sich der Computer zufällig für ein Symbol.
+    </p>
+
+    <p id="winnings">
+        Gewonnen hast du in den folgenden Fällen: <br>
+        Du wählst Schere, der Computer wählt Papier.<br>
+        Du wählst Stein, der Computer wählt Schere. <br>
+        Du wählst Papier, der Computer wählt Stein.<br>
+    </p>
+
+    <p id="looses">
+        Verloren hast du in den folgenden Fällen: <br>
+        Du wählst Schere, der Computer wählt Stein. <br>
+        Du wählt Stein, der Computer wählt Papier.<br>
+        Du wählst Papier, der Computer wählt Schere.<br>
+    </p>
+
+    <p>
+        Wählt ihr beide das Gleiche, ist es ein Unentschieden.
+    </p>
+
+</div>
+
+<div class="hide-rules-btn"></div>
+
+
+<div class="result"></div>
+
+<p>Wähle aus, was Du spielen möchtest:</p>
+
+<div class="displayChoice">
+    <div class="symbol scissor-img" id="scissor-btn">Schere</div>
+    <div class="symbol stone-img" id="stone-btn">Stein</div>
+    <div class="symbol paper-img" id="paper-btn">Papier</div>
+</div>
+
+<div class="gamePlay">
+
+    <div class="choice">
+    <p id="player">DU:</p>
+    <div class="playersChoice">
+        <div class="symbol empty"></div>
+    </div>
+    </div>
+
+    <div class="choice">
+    <p id="comp">COMPUTER: </p>
+    <div class="comChoice">
+        <div class="symbol empty"></div>
+    </div>
+    </div>
+
+</div>
+
+</body>
+</html>

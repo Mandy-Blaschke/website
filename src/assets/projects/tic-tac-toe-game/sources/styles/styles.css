@@ -1,0 +1,75 @@
+@import "field.css";
+@import "coin.css";
+@import "media-queries.css";
+
+html {
+    background-color: rgba(214, 227, 225, 0.15);
+}
+
+body {
+    font-family: 'Manrope', 'Lato', 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    display: flex;
+    font-family: 'Ramaraja', 'GFS Neohellenic', sans-serif;
+    font-size: 7rem;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+#tic, #toe {
+    background-image: linear-gradient(45deg, blue, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#tac {
+    background-image: linear-gradient(45deg, red, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.displayPlayer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.red {
+    color: red;
+    font-weight: bolder;
+}
+
+.blue {
+    color: blue;
+    font-weight: bolder;
+}
+
+button {
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 6px;
+    color: white;
+    margin: 30px;
+    text-shadow: 1px 1px 1px black;
+    background-image: linear-gradient(-65deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
+    box-shadow: 1px 1px 2px black;
+}
+
+.hidden {
+    display: none !important;
+}
