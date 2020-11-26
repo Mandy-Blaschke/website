@@ -151,10 +151,11 @@ section {
           padding: 15px;
           margin: 15px;
           box-shadow: 0 0 15px main.$color-grey1;
-        }
 
-        &.shown {
-          height: fit-content;
+
+          &.shown {
+            height: fit-content;
+          }
         }
 
         .line {
