@@ -12,10 +12,8 @@ export class QualificationSubpageComponent implements OnInit {
 
   stations = stations;
 
-
   leftSide = this.stations.filter((station) => this.stations.indexOf(station) % 2 === 0);
   rightSide = this.stations.filter((station) => this.stations.indexOf(station) % 2 !== 0);
-  wideMedia = window.innerWidth > 640;
 
   showDescriptionToggling(station: CareerStation): boolean {
     return station.shown === false ? station.shown = true : station.shown = false;

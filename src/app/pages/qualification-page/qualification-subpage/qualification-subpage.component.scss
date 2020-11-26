@@ -18,6 +18,11 @@ section {
   .wideMedia {
     display: contents;
 
+    @media (max-width: 640px) {
+      display: none;
+    }
+
+
     .arrow {
       background-color: #AADBC2;
       height: 50px;
@@ -118,6 +123,9 @@ section {
   }
 
   .smallMedia {
+    @media(min-width: 640px) {
+      display: none;
+    }
 
     .arrow-box {
       display: flex;
@@ -146,7 +154,7 @@ section {
         .station {
           position: relative;
           box-sizing: content-box;
-          height: 200px;
+          height: 220px;
           max-width: 250px;
           padding: 15px;
           margin: 15px;
