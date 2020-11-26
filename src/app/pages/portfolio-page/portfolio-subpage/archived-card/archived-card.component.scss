@@ -3,15 +3,17 @@
 .tag-filter {
   display: flex;
   flex-direction: column;
-  margin: 175px 0 25px 0;
+  align-items: center;
+  margin: 175px auto 25px auto;
+  max-width: 90%;
 
   .tag-box {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
 
     .tag {
-      margin-bottom: 0;
+      margin: 15px;
 
       &.activeTag {
         font-weight: 700;
@@ -74,6 +76,10 @@
       display: flex;
       justify-content: space-between;
       padding: 0 25px;
+    }
+
+    @media (max-width: 350px) {
+      max-width: 80%;
     }
   }
 }

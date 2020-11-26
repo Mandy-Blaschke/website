@@ -4,79 +4,128 @@
 
   <app-quote [author]="author" [quoteText]="quoteText"></app-quote>
 
-  <div class="arrow"></div>
 
-  <div class="cv-box">
+  <div class="wideMedia" *ngIf="wideMedia">
+    <div class="arrow"></div>
+    <div class="cv-box-wide">
 
-    <div class="stations left-box">
+      <div class="stations left-box">
 
-      <div *ngFor="let station of leftSide"
-           class="left"
-           [class.shown]="station.shown"
-      >
+        <div *ngFor="let station of leftSide"
+             class="left"
+             [class.shown]="station.shown"
+        >
 
-        <div class="banner">
-          <a href="{{station.certificateUrl}}" target="_blank"
-             *ngIf="station.certificate !== undefined">
-            {{station.certificate}}</a>
+          <div class="banner">
+            <a href="{{station.certificateUrl}}" target="_blank"
+               *ngIf="station.certificate !== undefined">
+              {{station.certificate}}</a>
+          </div>
+
+          <h2>{{station.company}}</h2>
+          <h3>{{station.specialization}}</h3>
+          <p class="date">{{station.date}}</p>
+
+          <div class="line"></div>
+
+          <div (click)="showDescriptionToggling(station)"
+               class="toggle"
+          >
+            <p *ngIf="!station.shown">Mehr erfahren!</p>
+            <p *ngIf="station.shown">Ausblenden</p>
+          </div>
+
+          <p *ngIf="station.shown"
+             class="description"
+          >
+            {{station.description}}</p>
         </div>
 
-        <h2>{{station.company}}</h2>
-        <h3>{{station.specialization}}</h3>
-        <p class="date">{{station.date}}</p>
+      </div>
 
-        <div class="line"></div>
+      <div class="stations right-box">
 
-        <div (click)="showDescriptionToggling(station)"
-             class="toggle"
+        <div *ngFor="let station of rightSide"
+             class="right"
+             [class.shown]="station.shown"
         >
-          <p *ngIf="!station.shown">Mehr erfahren!</p>
-          <p *ngIf="station.shown">Ausblenden</p>
+
+          <div class="banner">
+            <a href="{{station.certificateUrl}}" target="_blank"
+               *ngIf="station.certificate !== undefined">
+              {{station.certificate}}</a>
+          </div>
+
+          <h2>{{station.company}}</h2>
+          <h3>{{station.specialization}}</h3>
+          <p class="date">{{station.date}}</p>
+
+          <div class="line"></div>
+
+          <div (click)="showDescriptionToggling(station)"
+               class="toggle"
+          >
+            <p *ngIf="!station.shown">Mehr erfahren!</p>
+            <p *ngIf="station.shown">Ausblenden</p>
+          </div>
+
+          <p *ngIf="station.shown"
+             class="description"
+          >
+            {{station.description}}</p>
         </div>
 
-        <p *ngIf="station.shown"
-           class="description"
-        >
-          {{station.description}}</p>
       </div>
 
     </div>
 
-    <div class="stations right-box">
+  </div>
 
-      <div *ngFor="let station of rightSide"
-           class="right"
-           [class.shown]="station.shown"
-      >
+  <div class="smallMedia" *ngIf="!wideMedia">
 
-        <div class="banner">
-          <a href="{{station.certificateUrl}}" target="_blank"
-             *ngIf="station.certificate !== undefined">
-            {{station.certificate}}</a>
-        </div>
 
-        <h2>{{station.company}}</h2>
-        <h3>{{station.specialization}}</h3>
-        <p class="date">{{station.date}}</p>
-
-        <div class="line"></div>
-
-        <div (click)="showDescriptionToggling(station)"
-             class="toggle"
-        >
-          <p *ngIf="!station.shown">Mehr erfahren!</p>
-          <p *ngIf="station.shown">Ausblenden</p>
-        </div>
-
-        <p *ngIf="station.shown"
-           class="description"
-        >
-          {{station.description}}</p>
-      </div>
-
+    <div class="arrow-box">
+      <div class="arrow"></div>
     </div>
 
+    <div class="cv-box-small">
 
+      <div class="stations">
+
+        <div *ngFor="let station of stations"
+             [class.shown]="station.shown"
+             class="station"
+        >
+
+          <div class="banner">
+            <a href="{{station.certificateUrl}}" target="_blank"
+               *ngIf="station.certificate !== undefined">
+              {{station.certificate}}</a>
+          </div>
+
+          <h2>{{station.company}}</h2>
+          <h3>{{station.specialization}}</h3>
+          <p class="date">{{station.date}}</p>
+
+          <div class="line"></div>
+
+          <div (click)="showDescriptionToggling(station)"
+               class="toggle"
+          >
+            <p *ngIf="!station.shown">Mehr erfahren!</p>
+            <p *ngIf="station.shown">Ausblenden</p>
+          </div>
+
+          <p *ngIf="station.shown"
+             class="description"
+          >
+            {{station.description}}</p>
+        </div>
+
+      </div>
+
+
+    </div>
   </div>
 
 

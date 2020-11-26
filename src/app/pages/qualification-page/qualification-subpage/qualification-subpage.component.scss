@@ -14,88 +14,161 @@ section {
   align-items: center;
   margin: 130px 0 25px 0;
 
-  .arrow {
-    background-color: #AADBC2;
-    height: 50px;
-    width: 50px;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    animation: scaling infinite 3s linear;
-    animation-delay: 2s;
-  }
 
-  .cv-box {
-    display: flex;
-    max-width: 850px;
+  .wideMedia {
+    display: contents;
 
-    .left-box {
-      border-right: 5px solid #AADBC2;
+    .arrow {
+      background-color: #AADBC2;
+      height: 50px;
+      width: 50px;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      animation: scaling infinite 3s linear;
+      animation-delay: 2s;
     }
 
-    .stations {
+    .cv-box-wide {
       display: flex;
-      flex-direction: column;
-      width: 50%;
+      max-width: 850px;
 
-      .line {
-        height: 5px;
-        width: 380px;
-        background-color: #AADBC2;
+      .left-box {
+        border-right: 5px solid #AADBC2;
       }
 
-      .left, .right {
-        position: relative;
-        box-sizing: content-box;
-        height: 200px;
-        max-width: 350px;
-        padding: 15px;
-        margin: 15px;
-        box-shadow: 0 0 15px main.$color-grey1;
+      .stations {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        .line {
+          height: 5px;
+          width: 380px;
+          background-color: #AADBC2;
+        }
+
+        .left, .right {
+          position: relative;
+          box-sizing: content-box;
+          height: 200px;
+          max-width: 350px;
+          padding: 15px;
+          margin: 15px;
+          box-shadow: 0 0 15px main.$color-grey1;
+
+          &.shown {
+            height: fit-content;
+          }
+
+          .banner {
+            @include main.banner;
+          }
+
+          .toggle {
+            @include main.toggle-description;
+          }
+
+          h2 {
+            color: main.$color-green1;
+          }
+
+          h3 {
+            color: lighten(main.$color-green1, 15%);
+          }
+
+          .description {
+            text-align: justify;
+          }
+
+          .date {
+            font-size: 0.8rem;
+          }
+        }
+
+        .right {
+          margin-top: 55px;
+
+          .line {
+            transform: translateX(-33px);
+          }
+        }
+      }
+
+      @media (max-width: 810px) {
+
+        .left, .right {
+          width: 310px;
+        }
+
+        .line {
+          width: 341px !important;
+        }
+      }
+
+      @media (max-width: 740px) {
+
+        .left, .right {
+          width: 260px;
+        }
+
+        .line {
+          width: 291px !important;
+        }
+      }
+    }
+  }
+
+  .smallMedia {
+
+    .arrow-box {
+      display: flex;
+      justify-content: flex-end;
+
+      .arrow {
+        background-color: #AADBC2;
+        height: 55px;
+        width: 55px;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        animation: scaling infinite 3s linear;
+        animation-delay: 2s;
+      }
+    }
+
+    .cv-box-small {
+      display: flex;
+      max-width: 850px;
+
+      .stations {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        border-right: 5px solid #AADBC2;
+
+        .station {
+          position: relative;
+          box-sizing: content-box;
+          height: 200px;
+          max-width: 250px;
+          padding: 15px;
+          margin: 15px;
+          box-shadow: 0 0 15px main.$color-grey1;
+        }
 
         &.shown {
           height: fit-content;
         }
 
+        .line {
+          height: 5px;
+          width: 100%;
+          background-color: #AADBC2;
+        }
+
         .banner {
-          position: absolute;
-          top: 0;
-          right: 0;
-          width: 100px;
-          height: 60px;
-          display: flex;
-          justify-content: flex-end;
-          align-items: flex-start;
-          overflow: hidden;
-
-          a {
-            transform: translate(35px, 10px) rotate(30deg);
-            padding: 2px 40px;
-            background-color: rgba(199, 29, 123, 0.8);
-            color: #f8f8ff;
-
-            &:hover, &:active {
-              cursor: pointer;
-              background-color: main.$color-white;
-              color: main.$color-pink;
-              box-shadow: 0 0 3px main.$color-pink;
-            }
-          }
+          @include main.banner;
         }
 
         .toggle {
-          p {
-            display: inline-block;
-            margin: 25px 0;
-            font-weight: 700;
-            color: main.$color-pink;
-            user-select: none;
-
-            &:hover, &:active {
-              padding: 0 5px;
-              cursor: pointer;
-              background-color: main.$color-pink;
-              color: main.$color-white;
-            }
-          }
+          @include main.toggle-description;
         }
 
         h2 {
@@ -114,17 +187,18 @@ section {
           font-size: 0.8rem;
         }
       }
+    }
 
-      .right {
-        margin-top: 55px;
-
-        .line {
-          transform: translateX(-33px);
-        }
+    @media (max-width: 640px) {
+      .line {
+        width: 255px !important;
       }
     }
   }
 }
+
+
+// bis 640px
 
 @keyframes scaling {
   0% {

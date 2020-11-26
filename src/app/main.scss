@@ -10,10 +10,52 @@ $color-green1: rgb(32, 110, 70);
 $color-white: #f8f8ff;
 $color-grey1: #e5e4e4;
 $color-grey2: #a0a0a0;
-$color-pink: rgba(199,29,123, 0.8);
+$color-pink: rgba(199, 29, 123, 0.8);
 
 $green-background-color: rgba(64, 187, 118, 0.4);
 
+@mixin toggle-description {
+  p {
+    display: inline-block;
+    margin: 25px 0;
+    font-weight: 700;
+    color: $color-pink;
+    user-select: none;
+
+    &:hover, &:active {
+      padding: 0 5px;
+      cursor: pointer;
+      background-color: $color-pink;
+      color: $color-white;
+    }
+  }
+}
+
+@mixin banner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  overflow: hidden;
+
+  a {
+    transform: translate(35px, 10px) rotate(30deg);
+    padding: 2px 40px;
+    background-color: rgba(199, 29, 123, 0.8);
+    color: #f8f8ff;
+
+    &:hover, &:active {
+      cursor: pointer;
+      background-color: $color-white;
+      color: $color-pink;
+      box-shadow: 0 0 3px $color-pink;
+    }
+  }
+}
 
 @mixin section-standards {
   min-height: $page-height;

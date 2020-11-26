@@ -1,22 +1,27 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-qualification-subpage',
   templateUrl: './qualification-subpage.component.html',
   styleUrls: ['./qualification-subpage.component.scss']
 })
-export class QualificationSubpageComponent {
+export class QualificationSubpageComponent implements OnInit {
 
   quoteText = 'Um große Erfolge zu erreichen, muss etwas gewagt werden.';
   author = 'Helmuth von Moltke';
 
   stations = stations;
 
+
   leftSide = this.stations.filter((station) => this.stations.indexOf(station) % 2 === 0);
   rightSide = this.stations.filter((station) => this.stations.indexOf(station) % 2 !== 0);
+  wideMedia = window.innerWidth > 640;
 
   showDescriptionToggling(station: CareerStation): boolean {
     return station.shown === false ? station.shown = true : station.shown = false;
+  }
+
+  ngOnInit(): void {
   }
 }
 
