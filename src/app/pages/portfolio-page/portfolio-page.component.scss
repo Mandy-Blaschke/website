@@ -6,7 +6,6 @@ section {
   background-color: main.$green-background-color;
   color: main.$color-white;
   text-shadow: 1px 1px 5px main.$color-grey2;
-  // color: #454545;
 
   .text {
     box-sizing: border-box;
@@ -69,6 +68,12 @@ section {
     }
   }
 
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
   @media (max-width: 700px) {
     .pic {
       img {
@@ -78,10 +83,6 @@ section {
   }
 
   @media (max-width: 650px) {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-
     .pic {
       img {
         max-width: 350px;
@@ -99,7 +100,6 @@ section {
 
   @media (max-width: 460px) {
     .text {
-
       h1 {
         font-size: 35px;
       }
@@ -107,7 +107,6 @@ section {
   }
 
   @media (max-width: 650px) {
-
     .pic {
       max-width: 320px;
 
