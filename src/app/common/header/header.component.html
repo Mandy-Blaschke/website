@@ -1,7 +1,11 @@
 <div class="header-background">
 
-  <h1 (click)="toggleNav()">
+  <h1 (click)="toggleNav()" [class.hidden]="changeHeader">
     MANDY BLASCHKE
+  </h1>
+
+  <h1 (click)="toggleNav()" [class.hidden]="!changeHeader" class="ham">
+      ☰
   </h1>
 
 </div>

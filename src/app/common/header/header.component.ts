@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 
 @Component({
@@ -9,11 +9,18 @@ import {Router} from '@angular/router';
 export class HeaderComponent implements OnInit {
   showNav = false;
   navOnceOpened = false;
+  changeHeader = false;
 
   constructor(private router: Router) {
   }
 
   ngOnInit(): void {
+  }
+
+  @HostListener('window:scroll')
+  onScroll(): void {
+    // console.log('Scroll', window.scrollY);
+    this.changeHeader = window.scrollY > 1000;
   }
 
   async toContact(): Promise<void> {

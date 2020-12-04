@@ -3,19 +3,37 @@
 .header-background {
   box-sizing: border-box;
   height: 125px;
-  padding: 35px 0 0 35px;
+  position: relative;
   @include main.header;
 
 
   h1 {
     margin: 0;
+    padding: 35px 0 0 35px;
     color: main.$color-white;
     font-size: 2.5rem;
     text-shadow: 1px 1px 2px main.$color-grey2;
+    position: absolute;
+    transition: opacity 1s;
+
+    &.ham {
+      display: none;
+    }
 
     &:active, &:hover {
       color: main.$color-pink;
       text-shadow: 1px 1px 2px main.$color-white;
+    }
+
+    @media (max-width: 920px) {
+      &.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      &.ham {
+        display: block;
+      }
     }
 
     @media (max-width: 520px) {
