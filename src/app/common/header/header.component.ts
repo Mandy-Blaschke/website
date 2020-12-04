@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from '@angular/router';
 
 @Component({
@@ -8,8 +8,10 @@ import {Router} from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   showNav = false;
+  navOnceOpened = false;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) {
+  }
 
   ngOnInit(): void {
   }
@@ -26,5 +28,6 @@ export class HeaderComponent implements OnInit {
 
   toggleNav(): void {
     this.showNav = !this.showNav;
+    this.navOnceOpened = true;
   }
 }

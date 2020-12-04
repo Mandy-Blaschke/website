@@ -4,7 +4,11 @@
   </h1>
 </div>
 
-<div class="navigation" *ngIf="showNav">
+<div class="navigation"
+[class.fade-in]="showNav"
+[class.fade-out]="!showNav && navOnceOpened"
+*ngIf="navOnceOpened"
+>
 
   <h1 (click)="toStart()">Startseite</h1>
   <h1 [routerLink]="'/portfolio'">Portfolio</h1>
