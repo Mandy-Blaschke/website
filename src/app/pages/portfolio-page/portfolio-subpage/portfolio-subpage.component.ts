@@ -49,7 +49,7 @@ export const projects: Project[] = [
     pinned: false,
   },
   {
-    title: 'Schere-Stein-Papier-V2',
+    title: 'Schere-Stein-Papier - V2',
     description: 'Klassisches Schere-Stein-Papier-Spiel, das man gegen den Computer spielt, der zufällig entscheidet, was er wählt. ' +
       'Diesmal mit dem framework Angular erstellt und mit einigen Animationen.',
     preview: '/assets/previews/scissors-stone-paper.webp',
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     pinned: false,
   },
   {
-    title: 'Hangman',
+    title: 'Hangman - V2',
     description: 'Das ein Spiel, bei dem ein Wort gesucht ist. Man rät Buchstaben, um das Wort zu finden, ' +
       'möglichst bevor der "Hangman" fertig gezeichnet wurde.',
     preview: '/assets/previews/hangman2.webp',
@@ -79,7 +79,7 @@ export const projects: Project[] = [
     pinned: false,
   },
   {
-    title: 'TicTacToe',
+    title: 'TicTacToe - V2',
     description: 'Das ist ein Drei-Gewinnt-Spiel, bei dem zwei Leute gegeneinander spielen können. ' +
       'Das ist meine neue Version von dem Spiel, dass ich dieses Mal mit dem Framework Angular erstellt habe.',
     preview: '/assets/previews/tictactoe2.webp',
@@ -200,7 +200,7 @@ export const projects: Project[] = [
     pinned: false,
   },
   {
-    title: 'Hangman - Version 1',
+    title: 'Hangman - V1',
     description: 'Hangman-Spiel, dass ich ohne Framework erstellt habe. Diente dazu, die Grundlagen von JavaScript zu lernen.',
     preview: '/assets/previews/hangman1.webp',
     url: '/assets/projects/hangman-game/sources/index.html',
@@ -209,7 +209,7 @@ export const projects: Project[] = [
     pinned: false,
   },
   {
-    title: 'TicTacToc - Version 1',
+    title: 'TicTacToc - V1',
     description: 'TicTacToe-Spiel, dass ich ohne Framework erstellt habe. Diente dazu, die Grundlagen von JavaScript zu lernen. ' +
       'Zwei Spieler können gegen einander spielen, wobei die Münze entscheidet, wer beginnt.',
     preview: '/assets/previews/tictactoe1.webp',
@@ -219,7 +219,7 @@ export const projects: Project[] = [
     pinned: false,
   },
   {
-    title: 'SchereSteinPapier',
+    title: 'Schere-Stein-Papier - V1',
     description: 'Spiel, dass ich ohne Framework erstellt habe. Diente dazu, die Grundlagen von JavaScript zu lernen.',
     preview: '/assets/previews/schere-stein-papier.webp',
     url: '/assets/projects/scissors-stone-paper-game/sources/index.html',
