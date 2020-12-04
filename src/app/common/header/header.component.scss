@@ -56,11 +56,11 @@
   text-shadow: 1px 1px 2px main.$color-grey2;
 
   &.fade-in {
-    animation: fade-in 1s cubic-bezier(.5, -0.55, .57, 1.49);
+    animation: fade-in 750ms cubic-bezier(.5, -0.55, .57, 1.49);
   }
 
   &.fade-out {
-    animation: fade-out 1s cubic-bezier(.5, -0.55, .57, 1.49);
+    animation: fade-out 750ms cubic-bezier(.5, -0.55, .57, 1.49);
     animation-fill-mode: both;
   }
 
@@ -80,7 +80,7 @@
 
 @keyframes fade-in {
   0% {
-    transform: translateY(-500px) translateX(-500px) rotate(45deg);
+    transform: translateY(-360px) translateX(-360px) rotate(45deg);
   }
   100% {
     transform: translateY(-50px) rotate(0deg);
@@ -92,6 +92,6 @@
     transform: translateY(-50px) rotate(0deg);
   }
   100% {
-    transform: translateY(-500px) translateX(-500px) rotate(45deg);
+    transform: translateY(-360px) translateX(-360px) rotate(45deg);
   }
 }
