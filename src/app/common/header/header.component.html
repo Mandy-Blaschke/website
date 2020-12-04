@@ -1,8 +1,10 @@
 <div class="header-background">
-  <h1>MANDY BLASCHKE</h1>
+  <h1 (click)="toggleNav()">
+    MANDY BLASCHKE
+  </h1>
 </div>
 
-<div class="navigation">
+<div class="navigation" *ngIf="showNav">
 
   <h1 (click)="toStart()">Startseite</h1>
   <h1 [routerLink]="'/portfolio'">Portfolio</h1>

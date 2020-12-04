@@ -7,6 +7,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  showNav = false;
 
   constructor(private router: Router) { }
 
@@ -21,5 +22,9 @@ export class HeaderComponent implements OnInit {
   async toStart(): Promise<void> {
     await this.router.navigate(['start']);
     scrollTo({top: 0, behavior: 'smooth'});
+  }
+
+  toggleNav(): void {
+    this.showNav = !this.showNav;
   }
 }
