@@ -49,6 +49,16 @@ export const projects: Project[] = [
     pinned: false,
   },
   {
+    title: 'Schere-Stein-Papier-V2',
+    description: 'Klassisches Schere-Stein-Papier-Spiel, das man gegen den Computer spielt, der zufällig entscheidet, was er wählt. ' +
+      'Diesmal mit dem framework Angular erstellt und mit einigen Animationen.',
+    preview: '/assets/previews/scissors-stone-paper.webp',
+    url: '/assets/projects/ssp/',
+    gitUrl: 'https://github.com/Mandy-Blaschke/scissors-stone-paper-v2',
+    tags: ['Responsive', 'Angular', 'Interaktiv', 'Blickfang'],
+    pinned: false,
+  },
+  {
     title: 'Schach',
     description: 'Schachbrett, sodass zwei Spieler gegeneinander spielen können. ' +
       'Die Regeln habe ich (noch?) nicht implementiert, aber eine Neustartfunktion ist vorhanden.',
