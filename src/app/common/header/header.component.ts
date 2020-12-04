@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
   @HostListener('window:scroll')
   onScroll(): void {
     // console.log('Scroll', window.scrollY);
-    this.changeHeader = window.scrollY > 1000;
+    this.changeHeader = window.scrollY > 20;
   }
 
   async toContact(): Promise<void> {
