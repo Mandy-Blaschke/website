@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  async toContact(): Promise<void> {
+    await this.router.navigate(['start']);
+    scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});
+  }
+
+  async toStart(): Promise<void> {
+    await this.router.navigate(['start']);
+    scrollTo({top: 0, behavior: 'smooth'});
+  }
 }

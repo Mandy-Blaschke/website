@@ -1,3 +1,12 @@
-<div>
+<div class="header-background">
   <h1>MANDY BLASCHKE</h1>
+</div>
+
+<div class="navigation">
+
+  <h1 (click)="toStart()">Startseite</h1>
+  <h1 [routerLink]="'/portfolio'">Portfolio</h1>
+  <h1 [routerLink]="'/leben'">Leben</h1>
+  <h1 (click)="toContact()">Kontakt</h1>
+
 </div>

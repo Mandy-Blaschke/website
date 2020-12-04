@@ -1,12 +1,10 @@
 @use "src/app/main";
 
-div {
+.header-background {
   box-sizing: border-box;
   height: 125px;
   padding: 35px 0 0 35px;
   @include main.header;
-
-
 
   h1 {
     margin: 0;
@@ -14,8 +12,39 @@ div {
     font-size: 2.5rem;
     text-shadow: 1px 1px 2px main.$color-grey2;
 
+    &:active, &:hover {
+      color: main.$color-pink;
+      text-shadow: 1px 1px 2px main.$color-white;
+    }
+
     @media (max-width: 520px){
      font-size: 35px;
     }
+  }
+}
+
+.navigation {
+  width: 360px;
+  position: fixed;
+  z-index: -20;
+  box-sizing: border-box;
+  transform: translateY(-50px);
+  padding: 45px 25px 25px 35px;
+  background-color: rgba(64, 187, 118, 0.6);
+  backdrop-filter: blur(3px);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 49%, 0% 0%);
+  color: main.$color-white;
+  text-shadow: 1px 1px 2px main.$color-grey2;
+
+  h1 {
+    outline: none;
+
+    &:active, &:hover {
+      color: main.$color-pink;
+    }
+  }
+
+  @media (max-width: 520px) {
+    width: 330px;
   }
 }
