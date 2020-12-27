@@ -41,12 +41,26 @@ export const projects: Project[] = [
   },
   {
     title: 'Projekt Archiv',
-    description: 'Dies ist mein altes Projekt Archiv. In diesem habe ich alle Projekte gehabt, die ich nicht mehr auf Firebase veröffentlicht hatte.',
+    description: 'Dies ist mein altes Projekt Archiv. In diesem habe ich alle Projekte gehabt, ' +
+      'die ich nicht mehr auf Firebase veröffentlicht hatte.',
     preview: '/assets/previews/archiv.webp',
     url: '/assets/projects/archiv/',
     gitUrl: 'https://github.com/Mandy-Blaschke/archiv',
     tags: ['Responsive', 'Angular', 'Statisch'],
     pinned: false,
+  },
+  {
+    title: 'Tamagotchi',
+    description: 'Das ist meine Version eines Tamagotchis - ein virtuelles Haustier, ' +
+      'um das sich kümmern und mit dem man interagieren muss. ' +
+      'Sämtliche Bilder sind von mir mit dem Programm Affinity Photo gezeichnet. Es ist insofern noch in Arbeit, als dass ich aktuell ' +
+      'an weiteren Tieren arbeite. Bei jedem Neustart soll dann später ein zufälliges Tier ausgewählt werden. ' +
+      'Dies ist zudem meine erste PWA.',
+    preview: '/assets/previews/tamagotchi.webp',
+    url: 'https://mandys-tamagotchi.web.app/',
+    gitUrl: 'https://github.com/Mandy-Blaschke/tamagotchi-v4',
+    tags: ['Responsive', 'Angular', 'Interaktiv', 'Blickfang'],
+    pinned: true,
   },
   {
     title: 'Schere-Stein-Papier - V2',
@@ -61,7 +75,7 @@ export const projects: Project[] = [
   {
     title: 'Schach',
     description: 'Schachbrett, sodass zwei Spieler gegeneinander spielen können. ' +
-      'Die Regeln habe ich (noch?) nicht implementiert, aber eine Neustartfunktion ist vorhanden.',
+      'Die Regeln habe ich nicht implementiert, aber eine Neustartfunktion ist vorhanden.',
     preview: '/assets/previews/schach.webp',
     url: '/assets/projects/chess/',
     gitUrl: 'https://github.com/Mandy-Blaschke/chess',
@@ -139,7 +153,7 @@ export const projects: Project[] = [
     url: '/assets/projects/memory-v1/',
     gitUrl: 'https://github.com/Mandy-Blaschke/memory-game',
     tags: ['Responsive', 'Angular', 'Interaktiv'],
-    pinned: true,
+    pinned: false,
   },
   {
     title: 'Vergieß Mein Nicht',
