@@ -55,7 +55,7 @@ export const projects: Project[] = [
       'um das sich kümmern und mit dem man interagieren muss, da es andernfalls stirbt.  ' +
       'In dem Fall hat man dann die Möglichkeit, ein neues Tier zu adoptieren. ' +
       'Sämtliche Bilder sind von mir mit dem Programm Affinity Photo gezeichnet - abgesehen von den Emojis. ' +
-      'Zur Zeit gibt es einen Hund und eine Katze, ich arbeite aber ggf. noch an weiteren Tieren.' +
+      'Zur Zeit gibt es einen Hund und eine Katze, ich arbeite aber ggf. noch an weiteren Tieren. ' +
       'Dies ist zudem meine erste PWA.',
     preview: '/assets/previews/tamagotchi.webp',
     url: 'https://mandys-tamagotchi.web.app/',
