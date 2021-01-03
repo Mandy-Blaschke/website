@@ -52,9 +52,10 @@ export const projects: Project[] = [
   {
     title: 'Tamagotchi',
     description: 'Das ist meine Version eines Tamagotchis - ein virtuelles Haustier, ' +
-      'um das sich kümmern und mit dem man interagieren muss. ' +
-      'Sämtliche Bilder sind von mir mit dem Programm Affinity Photo gezeichnet. Es ist insofern noch in Arbeit, als dass ich aktuell ' +
-      'an weiteren Tieren arbeite. Bei jedem Neustart soll dann später ein zufälliges Tier ausgewählt werden. ' +
+      'um das sich kümmern und mit dem man interagieren muss, da es andernfalls stirbt.  ' +
+      'In dem Fall hat man dann die Möglichkeit, ein neues Tier zu adoptieren. ' +
+      'Sämtliche Bilder sind von mir mit dem Programm Affinity Photo gezeichnet - abgesehen von den Emojis. ' +
+      'Zur Zeit gibt es einen Hund und eine Katze, ich arbeite aber ggf. noch an weiteren Tieren.' +
       'Dies ist zudem meine erste PWA.',
     preview: '/assets/previews/tamagotchi.webp',
     url: 'https://mandys-tamagotchi.web.app/',
