@@ -31,9 +31,11 @@ export const stations: CareerStation[] = [
     specialization: 'Front End Web',
     date: '06/2020 - heute',
     description: `Seit Juni lerne ich das Framework Angular mit Hilfe von Büchern, Online-Kursen und meinem Mann.
-                  Seit dieser zeit erstelle ich auch all meine Projekte mit dem Framework.
+                  Seit dieser Zeit erstelle ich auch all meine Projekte mit diesem Framework.
                   Um meine Fähigkeiten weiter auszubauen, werde ich mich die nächste Zeit darauf konzentrieren,
-                  Projekte zu erstellen, da ich der Meinung bin, dass man nicht besser Programmieren lernen kann, als durch Praxis.`,
+                  Projekte zu erstellen, da ich der Meinung bin, dass man nicht besser Programmieren lernen kann, als durch Praxis.
+                  Meine nächstes Ziel ist die Kommunikation mit Back Ends, welche ich ebenfalls durch Projekte verschiedener
+                  Art und Umfang erlernen werde.`,
     shown: false,
   },
   {
