@@ -22,6 +22,16 @@ export class PortfolioSubpageComponent implements OnInit {
 
 export const projects: Project[] = [
   {
+    title: 'Kanban-Board',
+    description: 'Das ist mein erstes Projekt mit Backend und auch das erste, in dem ich Drag & Drop genutzt habe. ' +
+      'Es ist lediglich eine Demo, weshalb man nur Testdaten eintragen sollte.',
+    preview: '/assets/previews/kanban-demo.webp',
+    url: '/assets/projects/kanban/',
+    gitUrl: 'https://github.com/Mandy-Blaschke/kanban-board',
+    tags: ['Responsive', 'Angular', 'Interaktiv'],
+    pinned: true,
+  },
+  {
     title: 'Homepage',
     description: 'Das ist meine alte Homepage. Auf dieser Seite finden Sie bei Bedarf noch immer weitere Informationen zu mir.',
     preview: '/assets/previews/webseite.webp',
@@ -144,7 +154,7 @@ export const projects: Project[] = [
     url: '/assets/projects/whack-a-mole/index.html',
     gitUrl: 'https://github.com/Mandy-Blaschke/whack-a-mole',
     tags: ['Responsive', 'Angular', 'Interaktiv', 'Blickfang'],
-    pinned: true,
+    pinned: false,
   },
   {
     title: 'Memory',
