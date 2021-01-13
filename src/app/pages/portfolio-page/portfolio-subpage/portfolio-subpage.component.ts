@@ -28,7 +28,7 @@ export const projects: Project[] = [
     preview: '/assets/previews/kanban-demo.webp',
     url: '/assets/projects/kanban/',
     gitUrl: 'https://github.com/Mandy-Blaschke/kanban-board',
-    tags: ['Responsive', 'Angular', 'Interaktiv'],
+    tags: ['Responsive', 'Angular', 'Interaktiv', 'Blickfang'],
     pinned: true,
   },
   {
