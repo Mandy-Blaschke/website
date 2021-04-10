@@ -22,6 +22,31 @@ export class PortfolioSubpageComponent implements OnInit {
 
 export const projects: Project[] = [
   {
+    title: 'Kopfschmerz-Tracker',
+    description: 'Hier habe ich einen Kopfschmerz-Tracker erstellt. Bei dem neben der Intensität der Kopfschmerzen auch ' +
+      'erfasst werden kann, ob man ausreichend getrunken hat, wie Stimmung und Wetter an dem jeweiligen Tag waren. ' +
+      '\n ACHTUNG! Das \"Login\" ist nicht sicher!',
+    preview: '/assets/previews/headache-tracker.webp',
+    url: 'https://kopfschmerz-tracker.web.app/uebersicht',
+    gitUrl: 'https://github.com/Mandy-Blaschke/headache-tracker',
+    tags: ['Responsive', 'Angular', 'Interaktiv', 'Blickfang'],
+    pinned: true,
+  },
+  {
+    title: 'Tamagotchi',
+    description: 'Das ist meine Version eines Tamagotchis - ein virtuelles Haustier, ' +
+      'um das sich kümmern und mit dem man interagieren muss, da es andernfalls stirbt.  ' +
+      'In dem Fall hat man dann die Möglichkeit, ein neues Tier zu adoptieren. ' +
+      'Sämtliche Bilder sind von mir mit dem Programm Affinity Photo gezeichnet - abgesehen von den Emojis. ' +
+      'Zur Zeit gibt es einen Hund und eine Katze, ich arbeite aber ggf. noch an weiteren Tieren. ' +
+      'Dies ist zudem meine erste PWA.',
+    preview: '/assets/previews/tamagotchi.webp',
+    url: 'https://mandys-tamagotchi.web.app/',
+    gitUrl: 'https://github.com/Mandy-Blaschke/tamagotchi-v4',
+    tags: ['Responsive', 'Angular', 'Interaktiv', 'Blickfang'],
+    pinned: true,
+  },
+  {
     title: 'Kanban-Board',
     description: 'Das ist mein erstes Projekt mit Backend und auch das erste, in dem ich Drag & Drop genutzt habe. ' +
       'Es ist lediglich eine Demo, weshalb man nur Testdaten eintragen sollte.',
@@ -58,20 +83,6 @@ export const projects: Project[] = [
     gitUrl: 'https://github.com/Mandy-Blaschke/archiv',
     tags: ['Responsive', 'Angular', 'Statisch'],
     pinned: false,
-  },
-  {
-    title: 'Tamagotchi',
-    description: 'Das ist meine Version eines Tamagotchis - ein virtuelles Haustier, ' +
-      'um das sich kümmern und mit dem man interagieren muss, da es andernfalls stirbt.  ' +
-      'In dem Fall hat man dann die Möglichkeit, ein neues Tier zu adoptieren. ' +
-      'Sämtliche Bilder sind von mir mit dem Programm Affinity Photo gezeichnet - abgesehen von den Emojis. ' +
-      'Zur Zeit gibt es einen Hund und eine Katze, ich arbeite aber ggf. noch an weiteren Tieren. ' +
-      'Dies ist zudem meine erste PWA.',
-    preview: '/assets/previews/tamagotchi.webp',
-    url: 'https://mandys-tamagotchi.web.app/',
-    gitUrl: 'https://github.com/Mandy-Blaschke/tamagotchi-v4',
-    tags: ['Responsive', 'Angular', 'Interaktiv', 'Blickfang'],
-    pinned: true,
   },
   {
     title: 'Schere-Stein-Papier - V2',
@@ -111,7 +122,7 @@ export const projects: Project[] = [
     url: '/assets/projects/tictactoe/',
     gitUrl: 'https://github.com/Mandy-Blaschke/tic-tac-toe-game',
     tags: ['Responsive', 'Angular', 'Interaktiv', 'Blickfang'],
-    pinned: true,
+    pinned: false,
   },
   {
     title: '17und4',
