@@ -25,6 +25,7 @@ export const projects: Project[] = [
     title: 'Kopfschmerz-Tracker',
     description: 'Hier habe ich einen Kopfschmerz-Tracker erstellt. Bei dem neben der Intensität der Kopfschmerzen auch ' +
       'erfasst werden kann, ob man ausreichend getrunken hat, wie Stimmung und Wetter an dem jeweiligen Tag waren. ' +
+      'Zudem ist es möglich, das Farbschema zu ändern.' +
       '\n ACHTUNG! Das \"Login\" ist nicht sicher!',
     preview: '/assets/previews/headache-tracker.webp',
     url: 'https://kopfschmerz-tracker.web.app/uebersicht',

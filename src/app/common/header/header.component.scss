@@ -16,6 +16,10 @@
     position: absolute;
     transition: opacity 1s;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     &.ham {
       display: none;
     }
@@ -69,6 +73,7 @@
 
     &:active, &:hover {
       color: main.$color-pink;
+      cursor: pointer;
     }
   }
 
