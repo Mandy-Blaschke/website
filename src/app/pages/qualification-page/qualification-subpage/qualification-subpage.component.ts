@@ -26,16 +26,26 @@ export class QualificationSubpageComponent implements OnInit {
 
 export const stations: CareerStation[] = [
   {
+    company: 'AKAD University',
+    position: 'Studierende',
+    specialization: 'Software Engineering (B.Eng)',
+    date: '02/2021 - jetzt',
+    description: `Nachdem ich ein Jahr lang im Selbststudium gelernt habe, bin ich auf die AKAD University aufmerksam und
+                  den Studiengang Software Engineering geworden. Mit einem Blick auf die Studieninhalte war mir klar, dass
+                  es genau dem entspricht, was ich mir von einem Studium im Bereich der Informatik gewünscht hatte -
+                  nämlich den Fokus auf die Software Entwicklung. Zudem ist das Fernstudium mit Fokus auf Flexibilität
+                  zeitgemäß und ist während der Pandemie eine hervorragende Chance das Studium ohne Probleme zu absolvieren.`,
+    shown: false,
+  },
+  {
     company: 'Selbststudium',
     position: 'Studierende',
     specialization: 'Front End Web',
-    date: '06/2020 - heute',
-    description: `Seit Juni lerne ich das Framework Angular mit Hilfe von Büchern, Online-Kursen und meinem Mann.
+    date: '06/2020 - 02/2021',
+    description: `Seit Juni lerne ich das Framework Angular mit Hilfe von Büchern, Online-Kursen und meinem Mann (Software Entwickler).
                   Seit dieser Zeit erstelle ich auch all meine Projekte mit diesem Framework.
-                  Um meine Fähigkeiten weiter auszubauen, werde ich mich die nächste Zeit darauf konzentrieren,
-                  Projekte zu erstellen, da ich der Meinung bin, dass man nicht besser Programmieren lernen kann, als durch Praxis.
-                  Meine nächstes Ziel ist die Kommunikation mit Back Ends, welche ich ebenfalls durch Projekte verschiedener
-                  Art und Umfang erlernen werde.`,
+                  Um meine Fähigkeiten weiter auszubauen, habe ich mich einige Zeit darauf konzentriert,
+                  Projekte zu erstellen, da ich der Meinung bin, dass man nicht besser Programmieren lernen kann, als durch Praxis.`,
     shown: false,
   },
   {
@@ -111,11 +121,12 @@ export const stations: CareerStation[] = [
   {
     company: 'Hochschule Darmstadt',
     position: 'Studierende',
-    specialization: 'Informatik | KMI',
+    specialization: 'Informatik (B.Sc.)',
     date: '10/2019 - 03/2020',
     description: `Das Studium an der HDA habe ich angebrochen. Auslöser dafür war die Corona-Pandemie und die damit
                   einhergehenden Schulschließungen und Unsicherheiten.
-                  Dies ermöglichte es mir jedoch, mich konkret auf Front End Development zu konzentrieren.`,
+                  Dies ermöglichte es mir jedoch, mich konkret auf das zu konzentrieren, was ich wirklich machen
+                  möchte -  Front End Development.`,
     shown: false,
   },
   {
